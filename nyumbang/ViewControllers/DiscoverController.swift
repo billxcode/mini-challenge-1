@@ -15,6 +15,8 @@ class DiscoverController: UIViewController {
         
     }
     
+    @IBOutlet weak var searchSomething: UISearchBar!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
