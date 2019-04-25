@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		7F2FA6452270C0E900381683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2FA6442270C0E900381683 /* AppDelegate.swift */; };
-		7F2FA6472270C0E900381683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2FA6462270C0E900381683 /* ViewController.swift */; };
 		7F2FA64A2270C0E900381683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2FA6482270C0E900381683 /* Main.storyboard */; };
 		7F2FA64C2270C0EA00381683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2FA64B2270C0EA00381683 /* Assets.xcassets */; };
 		7F2FA64F2270C0EA00381683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2FA64D2270C0EA00381683 /* LaunchScreen.storyboard */; };
+		7F2FA6572270C77F00381683 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2FA6562270C77F00381683 /* Discover.storyboard */; };
+		7F2FA65A2270CFB400381683 /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2FA6592270CFB400381683 /* DiscoverController.swift */; };
+		7F2FA65C2270DE7500381683 /* Donate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2FA65B2270DE7500381683 /* Donate.storyboard */; };
+		7F2FA65E2270E11700381683 /* DonateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2FA65D2270E11700381683 /* DonateController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F2FA6412270C0E900381683 /* nyumbang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nyumbang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2FA6442270C0E900381683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F2FA6462270C0E900381683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7F2FA6492270C0E900381683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F2FA64B2270C0EA00381683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F2FA64E2270C0EA00381683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F2FA6502270C0EA00381683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F2FA6562270C77F00381683 /* Discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		7F2FA6592270CFB400381683 /* DiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
+		7F2FA65B2270DE7500381683 /* Donate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Donate.storyboard; sourceTree = "<group>"; };
+		7F2FA65D2270E11700381683 /* DonateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		7F2FA6432270C0E900381683 /* nyumbang */ = {
 			isa = PBXGroup;
 			children = (
+				7F2FA6582270CF6D00381683 /* ViewControllers */,
 				7F2FA6442270C0E900381683 /* AppDelegate.swift */,
-				7F2FA6462270C0E900381683 /* ViewController.swift */,
 				7F2FA6482270C0E900381683 /* Main.storyboard */,
+				7F2FA65B2270DE7500381683 /* Donate.storyboard */,
+				7F2FA6562270C77F00381683 /* Discover.storyboard */,
 				7F2FA64B2270C0EA00381683 /* Assets.xcassets */,
 				7F2FA64D2270C0EA00381683 /* LaunchScreen.storyboard */,
 				7F2FA6502270C0EA00381683 /* Info.plist */,
 			);
 			path = nyumbang;
+			sourceTree = "<group>";
+		};
+		7F2FA6582270CF6D00381683 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F2FA6592270CFB400381683 /* DiscoverController.swift */,
+				7F2FA65D2270E11700381683 /* DonateController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +140,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F2FA64F2270C0EA00381683 /* LaunchScreen.storyboard in Resources */,
+				7F2FA6572270C77F00381683 /* Discover.storyboard in Resources */,
+				7F2FA65C2270DE7500381683 /* Donate.storyboard in Resources */,
 				7F2FA64C2270C0EA00381683 /* Assets.xcassets in Resources */,
 				7F2FA64A2270C0E900381683 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F2FA6472270C0E900381683 /* ViewController.swift in Sources */,
+				7F2FA65A2270CFB400381683 /* DiscoverController.swift in Sources */,
+				7F2FA65E2270E11700381683 /* DonateController.swift in Sources */,
 				7F2FA6452270C0E900381683 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUHXR699G4;
 				INFOPLIST_FILE = nyumbang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUHXR699G4;
 				INFOPLIST_FILE = nyumbang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

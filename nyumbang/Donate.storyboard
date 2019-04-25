@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9b8-Xb-qVw">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Donate-->
+        <scene sceneID="2eu-nj-Jy5">
+            <objects>
+                <navigationController id="9b8-Xb-qVw" userLabel="Donate" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Donate" id="3U2-4J-i64"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Anx-WT-ylm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZV1-2a-9lF" kind="relationship" relationship="rootViewController" id="8xV-qu-wzV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SHs-a9-ycR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-911" y="-234"/>
+        </scene>
+        <!--Donate View Controller-->
+        <scene sceneID="9kQ-Yz-fcO">
+            <objects>
+                <viewController id="ZV1-2a-9lF" userLabel="Donate View Controller" customClass="DonateController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QKw-dr-RFu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKk-fH-79j">
+                                <rect key="frame" x="161" y="167" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Detail Donate"/>
+                                <connections>
+                                    <segue destination="Oj4-pw-8ab" kind="show" id="woV-Oh-unc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKp-Ww-iNy">
+                                <rect key="frame" x="161" y="252" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Donate History"/>
+                                <connections>
+                                    <segue destination="hzz-N2-Ol9" kind="show" id="Y9n-HG-HWN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IyQ-vr-q7K"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dDc-7Z-MYo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g4Q-ee-HD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="-239"/>
+        </scene>
+        <!--Donate History View Controller-->
+        <scene sceneID="2ZJ-sD-JqA">
+            <objects>
+                <viewController title="Donate History" id="hzz-N2-Ol9" userLabel="Donate History View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CFW-OL-CtW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fMk-9M-pXb">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="OuJ-VB-2HR"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zUc-SI-2le"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojS-7n-cFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139" y="476"/>
+        </scene>
+        <!--Detail Event-->
+        <scene sceneID="UaP-wb-bXp">
+            <objects>
+                <viewController title="Detail Event" id="Y4c-2w-Mre" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1cR-fk-ubR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UkY-UT-VUs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1g-0d-eYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="475"/>
+        </scene>
+        <!--Detail Donate View Controller-->
+        <scene sceneID="G2q-Pe-IQ2">
+            <objects>
+                <viewController title="Detail Donate" id="Oj4-pw-8ab" userLabel="Detail Donate View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="No7-Ps-ZgP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItY-ut-4OQ">
+                                <rect key="frame" x="160" y="690" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lihat Laporan"/>
+                                <connections>
+                                    <segue destination="Y4c-2w-Mre" kind="show" id="YRC-Rb-VpP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0Cv-Gk-LhQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yl4-qB-0Ii" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="-239"/>
+        </scene>
+    </scenes>
+</document>
