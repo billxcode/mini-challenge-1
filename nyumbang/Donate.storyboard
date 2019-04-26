@@ -15,11 +15,14 @@
             <objects>
                 <navigationController id="9b8-Xb-qVw" userLabel="Donate" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Donate" id="3U2-4J-i64"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Anx-WT-ylm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lau-VL-Jy5">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="ZV1-2a-9lF" kind="relationship" relationship="rootViewController" id="8xV-qu-wzV"/>
                     </connections>
@@ -31,36 +34,107 @@
         <!--Donate View Controller-->
         <scene sceneID="9kQ-Yz-fcO">
             <objects>
-                <viewController id="ZV1-2a-9lF" userLabel="Donate View Controller" customClass="DonateController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="On Going Donations" id="ZV1-2a-9lF" userLabel="Donate View Controller" customClass="DonateController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QKw-dr-RFu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKk-fH-79j">
-                                <rect key="frame" x="161" y="167" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Detail Donate"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZWL-do-6Er">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="onGoingDonationCell" rowHeight="150" id="wdu-mQ-0CE" customClass="OnGoingDonateTableViewCell" customModule="nyumbang" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wdu-mQ-0CE" id="2Zp-ZP-M4J">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="149.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Event Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fc-ej-AFM">
+                                                    <rect key="frame" x="20" y="31" width="242" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="242" id="lJz-Ft-nX5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="96" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-LK-ISU">
+                                                    <rect key="frame" x="342" y="39" width="52" height="16"/>
+                                                    <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Reaming">
+                                                            <attributes>
+                                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <font key="NSFont" metaFont="system"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxq-vt-h1i">
+                                                    <rect key="frame" x="20" y="72" width="72" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="IsV-pv-Fbe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donate Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qe-BR-PxT">
+                                                    <rect key="frame" x="20" y="117" width="76" height="7"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9ei-LK-ISU" firstAttribute="trailing" secondItem="2Zp-ZP-M4J" secondAttribute="trailingMargin" id="0bG-nf-Wca"/>
+                                                <constraint firstItem="1qe-BR-PxT" firstAttribute="top" secondItem="hxq-vt-h1i" secondAttribute="bottom" constant="30" id="9lt-PE-IjJ"/>
+                                                <constraint firstItem="hxq-vt-h1i" firstAttribute="top" secondItem="0fc-ej-AFM" secondAttribute="bottom" constant="5" id="9so-jX-K6m"/>
+                                                <constraint firstItem="9ei-LK-ISU" firstAttribute="top" secondItem="2Zp-ZP-M4J" secondAttribute="topMargin" constant="28" id="Eb3-PD-IxT"/>
+                                                <constraint firstItem="hxq-vt-h1i" firstAttribute="top" secondItem="0fc-ej-AFM" secondAttribute="bottom" constant="5" id="Qdt-JW-NVa"/>
+                                                <constraint firstItem="hxq-vt-h1i" firstAttribute="leading" secondItem="2Zp-ZP-M4J" secondAttribute="leadingMargin" id="TpN-NZ-9y3"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1qe-BR-PxT" secondAttribute="bottom" constant="15" id="aTV-70-JYq"/>
+                                                <constraint firstItem="0fc-ej-AFM" firstAttribute="leading" secondItem="2Zp-ZP-M4J" secondAttribute="leadingMargin" id="c7D-sv-2Zs"/>
+                                                <constraint firstItem="0fc-ej-AFM" firstAttribute="top" secondItem="2Zp-ZP-M4J" secondAttribute="topMargin" constant="20" id="enY-8l-Wu3"/>
+                                                <constraint firstItem="1qe-BR-PxT" firstAttribute="leading" secondItem="hxq-vt-h1i" secondAttribute="leading" id="wdH-gn-MJf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="1qe-BR-PxT" id="3gx-Pn-u7c"/>
+                                            <outlet property="eventNameLabel" destination="0fc-ej-AFM" id="yu2-YU-cM4"/>
+                                            <outlet property="reamingLabel" destination="9ei-LK-ISU" id="m2U-72-pE3"/>
+                                            <outlet property="statusLabel" destination="hxq-vt-h1i" id="qFp-2O-mlb"/>
+                                            <segue destination="Oj4-pw-8ab" kind="show" id="Jdw-Se-zLm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <segue destination="Oj4-pw-8ab" kind="show" id="woV-Oh-unc"/>
+                                    <outlet property="dataSource" destination="ZV1-2a-9lF" id="e81-Ff-V0M"/>
+                                    <outlet property="delegate" destination="ZV1-2a-9lF" id="MgC-AE-oqi"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKp-Ww-iNy">
-                                <rect key="frame" x="161" y="252" width="103" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Donate History"/>
-                                <connections>
-                                    <segue destination="hzz-N2-Ol9" kind="show" id="Y9n-HG-HWN"/>
-                                </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZWL-do-6Er" firstAttribute="trailing" secondItem="IyQ-vr-q7K" secondAttribute="trailing" id="6r7-bz-jLp"/>
+                            <constraint firstItem="ZWL-do-6Er" firstAttribute="bottom" secondItem="IyQ-vr-q7K" secondAttribute="bottom" id="ChM-yR-29y"/>
+                            <constraint firstItem="ZWL-do-6Er" firstAttribute="leading" secondItem="IyQ-vr-q7K" secondAttribute="leading" id="als-KT-NhE"/>
+                            <constraint firstItem="ZWL-do-6Er" firstAttribute="top" secondItem="IyQ-vr-q7K" secondAttribute="top" id="l7f-GQ-F8a"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="IyQ-vr-q7K"/>
                     </view>
                     <navigationItem key="navigationItem" id="dDc-7Z-MYo"/>
+                    <connections>
+                        <outlet property="navigationBarItem" destination="dDc-7Z-MYo" id="lVW-1j-7jP"/>
+                        <outlet property="tableView" destination="ZWL-do-6Er" id="utD-4d-uNu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4Q-ee-HD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-138" y="-239"/>
+            <point key="canvasLocation" x="-139.13043478260872" y="-239.0625"/>
         </scene>
         <!--Donate History View Controller-->
         <scene sceneID="2ZJ-sD-JqA">
@@ -91,7 +165,7 @@
             <objects>
                 <viewController title="Detail Event" id="Y4c-2w-Mre" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1cR-fk-ubR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UkY-UT-VUs"/>
@@ -106,7 +180,7 @@
             <objects>
                 <viewController title="Detail Donate" id="Oj4-pw-8ab" userLabel="Detail Donate View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="No7-Ps-ZgP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItY-ut-4OQ">
