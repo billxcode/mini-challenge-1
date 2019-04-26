@@ -65,7 +65,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="YeB-SG-ZzR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="YeB-SG-ZzR" customClass="YayasanCell" customModule="nyumbang" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YeB-SG-ZzR" id="Z0d-EV-NlF">
@@ -111,6 +111,11 @@
                                                 <constraint firstItem="6X8-CP-T7B" firstAttribute="top" secondItem="Z0d-EV-NlF" secondAttribute="top" id="hu3-rI-X7f"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionFoundation" destination="cGr-af-blk" id="XBM-CY-MDu"/>
+                                            <outlet property="thumbnailFoundation" destination="LAo-s7-2bF" id="u1i-RP-mli"/>
+                                            <outlet property="titleFoundation" destination="z5x-Ml-1ja" id="cQ6-Jc-Qz6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

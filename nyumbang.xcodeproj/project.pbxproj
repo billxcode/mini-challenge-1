@@ -17,6 +17,8 @@
 		7F2FA65E2270E11700381683 /* DonateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2FA65D2270E11700381683 /* DonateController.swift */; };
 		7F4708522272304F002B51BC /* OnGoingDonateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4708512272304F002B51BC /* OnGoingDonateTableViewCell.swift */; };
 		7F47085422723CCB002B51BC /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F47085322723CCB002B51BC /* Donation.swift */; };
+		B71761042273097C006F9C08 /* YayasanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71761032273097C006F9C08 /* YayasanCell.swift */; };
+		B717610622730B19006F9C08 /* Yayasan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717610522730B19006F9C08 /* Yayasan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		7F2FA65D2270E11700381683 /* DonateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateController.swift; sourceTree = "<group>"; };
 		7F4708512272304F002B51BC /* OnGoingDonateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGoingDonateTableViewCell.swift; sourceTree = "<group>"; };
 		7F47085322723CCB002B51BC /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		B71761032273097C006F9C08 /* YayasanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayasanCell.swift; sourceTree = "<group>"; };
+		B717610522730B19006F9C08 /* Yayasan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yayasan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +73,8 @@
 				7F2FA6442270C0E900381683 /* AppDelegate.swift */,
 				7F2FA6482270C0E900381683 /* Main.storyboard */,
 				7F2FA65B2270DE7500381683 /* Donate.storyboard */,
-				7FFE2BDA2272BE88008F1275 /* Model */,
 				7F2FA6562270C77F00381683 /* Discover.storyboard */,
+				7FFE2BDA2272BE88008F1275 /* Model */,
 				7F2FA64B2270C0EA00381683 /* Assets.xcassets */,
 				7F2FA64D2270C0EA00381683 /* LaunchScreen.storyboard */,
 				7F2FA6502270C0EA00381683 /* Info.plist */,
@@ -90,6 +94,7 @@
 		7FFE2BDA2272BE88008F1275 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B717610522730B19006F9C08 /* Yayasan.swift */,
 				7F47085322723CCB002B51BC /* Donation.swift */,
 			);
 			path = Model;
@@ -98,6 +103,7 @@
 		7FFE2BDB2272BEF4008F1275 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B71761032273097C006F9C08 /* YayasanCell.swift */,
 				7F4708512272304F002B51BC /* OnGoingDonateTableViewCell.swift */,
 			);
 			path = Components;
@@ -180,7 +186,9 @@
 				7F2FA65A2270CFB400381683 /* DiscoverController.swift in Sources */,
 				7F2FA65E2270E11700381683 /* DonateController.swift in Sources */,
 				7F47085422723CCB002B51BC /* Donation.swift in Sources */,
+				B71761042273097C006F9C08 /* YayasanCell.swift in Sources */,
 				7F2FA6452270C0E900381683 /* AppDelegate.swift in Sources */,
+				B717610622730B19006F9C08 /* Yayasan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
