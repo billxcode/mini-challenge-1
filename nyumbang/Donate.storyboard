@@ -107,7 +107,7 @@
                                             <outlet property="eventNameLabel" destination="0fc-ej-AFM" id="yu2-YU-cM4"/>
                                             <outlet property="reamingLabel" destination="9ei-LK-ISU" id="m2U-72-pE3"/>
                                             <outlet property="statusLabel" destination="hxq-vt-h1i" id="qFp-2O-mlb"/>
-                                            <segue destination="Oj4-pw-8ab" kind="show" id="Jdw-Se-zLm"/>
+                                            <segue destination="Oj4-pw-8ab" kind="show" id="d5I-y2-06k"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -126,9 +126,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IyQ-vr-q7K"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dDc-7Z-MYo"/>
+                    <navigationItem key="navigationItem" title="On Going Donations" id="dDc-7Z-MYo"/>
                     <connections>
-                        <outlet property="navigationBarItem" destination="dDc-7Z-MYo" id="lVW-1j-7jP"/>
                         <outlet property="tableView" destination="ZWL-do-6Er" id="utD-4d-uNu"/>
                     </connections>
                 </viewController>

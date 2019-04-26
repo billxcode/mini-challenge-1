@@ -14,13 +14,10 @@ class DonateController: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var navigationBarItem: UINavigationItem!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationBarItem.title = self.title
         
         donations = createDonations()
         
