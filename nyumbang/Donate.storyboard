@@ -178,7 +178,7 @@
         <scene sceneID="G2q-Pe-IQ2">
             <objects>
                 <viewController title="Detail Donate" id="Oj4-pw-8ab" userLabel="Detail Donate View Controller" customClass="DonateDetailController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="No7-Ps-ZgP">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="donationDetails" id="No7-Ps-ZgP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
