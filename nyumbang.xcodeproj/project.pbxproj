@@ -16,6 +16,8 @@
 		7F2FA65C2270DE7500381683 /* Donate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2FA65B2270DE7500381683 /* Donate.storyboard */; };
 		7F2FA65E2270E11700381683 /* DonateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2FA65D2270E11700381683 /* DonateController.swift */; };
 		7F47085422723CCB002B51BC /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F47085322723CCB002B51BC /* Donation.swift */; };
+		7FDA4F8822733093000C676A /* OnGoingDonateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4708512272304F002B51BC /* OnGoingDonateTableViewCell.swift */; };
+		7FDA4F8A227331E4000C676A /* DonateDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA4F89227331E4000C676A /* DonateDetailController.swift */; };
 		B09317F92273197E00F6DCC0 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09317F82273197E00F6DCC0 /* EventController.swift */; };
 		B09317FB22731B1700F6DCC0 /* ImageSliderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09317FA22731B1700F6DCC0 /* ImageSliderCollectionCell.swift */; };
 		B71761042273097C006F9C08 /* YayasanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71761032273097C006F9C08 /* YayasanCell.swift */; };
@@ -35,6 +37,7 @@
 		7F2FA65D2270E11700381683 /* DonateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateController.swift; sourceTree = "<group>"; };
 		7F4708512272304F002B51BC /* OnGoingDonateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGoingDonateTableViewCell.swift; sourceTree = "<group>"; };
 		7F47085322723CCB002B51BC /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		7FDA4F89227331E4000C676A /* DonateDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateDetailController.swift; sourceTree = "<group>"; };
 		B09317F82273197E00F6DCC0 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		B09317FA22731B1700F6DCC0 /* ImageSliderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderCollectionCell.swift; sourceTree = "<group>"; };
 		B71761032273097C006F9C08 /* YayasanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayasanCell.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 			children = (
 				7F2FA6592270CFB400381683 /* DiscoverController.swift */,
 				7F2FA65D2270E11700381683 /* DonateController.swift */,
+				7FDA4F89227331E4000C676A /* DonateDetailController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -192,9 +196,11 @@
 				7F47085422723CCB002B51BC /* Donation.swift in Sources */,
 				B71761042273097C006F9C08 /* YayasanCell.swift in Sources */,
 				B09317FB22731B1700F6DCC0 /* ImageSliderCollectionCell.swift in Sources */,
+				7FDA4F8A227331E4000C676A /* DonateDetailController.swift in Sources */,
 				7F2FA6452270C0E900381683 /* AppDelegate.swift in Sources */,
 				B09317F92273197E00F6DCC0 /* EventController.swift in Sources */,
 				B717610622730B19006F9C08 /* Yayasan.swift in Sources */,
+				7FDA4F8822733093000C676A /* OnGoingDonateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = UUHXR699G4;
 				INFOPLIST_FILE = nyumbang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -349,7 +355,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelompok6.nyumbang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -360,7 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = UUHXR699G4;
 				INFOPLIST_FILE = nyumbang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -368,7 +374,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kelompok6.nyumbang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
