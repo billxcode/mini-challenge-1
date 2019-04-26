@@ -15,7 +15,6 @@
 		7F2FA65A2270CFB400381683 /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2FA6592270CFB400381683 /* DiscoverController.swift */; };
 		7F2FA65C2270DE7500381683 /* Donate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2FA65B2270DE7500381683 /* Donate.storyboard */; };
 		7F2FA65E2270E11700381683 /* DonateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2FA65D2270E11700381683 /* DonateController.swift */; };
-		7F4708522272304F002B51BC /* OnGoingDonateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4708512272304F002B51BC /* OnGoingDonateTableViewCell.swift */; };
 		7F47085422723CCB002B51BC /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F47085322723CCB002B51BC /* Donation.swift */; };
 		B71761042273097C006F9C08 /* YayasanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71761032273097C006F9C08 /* YayasanCell.swift */; };
 		B717610622730B19006F9C08 /* Yayasan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717610522730B19006F9C08 /* Yayasan.swift */; };
@@ -182,7 +181,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B09317F42272F0F500F6DCC0 /* imageSliderCollectionCell.swift in Sources */,
 				7F2FA65A2270CFB400381683 /* DiscoverController.swift in Sources */,
 				7F2FA65E2270E11700381683 /* DonateController.swift in Sources */,
 				7F47085422723CCB002B51BC /* Donation.swift in Sources */,
@@ -335,7 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UUHXR699G4;
+				DEVELOPMENT_TEAM = C476YGMRCM;
 				INFOPLIST_FILE = nyumbang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -354,7 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UUHXR699G4;
+				DEVELOPMENT_TEAM = C476YGMRCM;
 				INFOPLIST_FILE = nyumbang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

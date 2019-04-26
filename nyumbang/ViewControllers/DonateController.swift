@@ -36,23 +36,23 @@ class DonateController: UIViewController {
 
 }
 
-extension DonateController: UITableViewDelegate, UITableViewDataSource {
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return donations.count
-        
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let donationOnGoing = donations[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "onGoingDonationCell") as! OnGoingDonateTableViewCell
-        cell.setDonation(donation: donationOnGoing)
-        return cell
-        
-    }
-
-
-
-}
+//extension DonateController: UITableViewDelegate, UITableViewDataSource {
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        
+//        return donations.count
+//        
+//    }
+////    
+////    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+////        
+////        let donationOnGoing = donations[indexPath.row]
+//////        let cell = tableView.dequeueReusableCell(withIdentifier: "onGoingDonationCell") as! OnGoingDonateTableViewCell
+//////        cell.setDonation(donation: donationOnGoing)
+////        return cell
+////        
+////    }
+//
+//
+//
+//}
