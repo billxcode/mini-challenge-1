@@ -9,7 +9,9 @@
 import UIKit
 
 class DiscoverController: UIViewController {
-
+    
+    @IBOutlet weak var listOfSearch: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

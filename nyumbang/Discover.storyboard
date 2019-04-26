@@ -64,36 +64,6 @@
                                 <rect key="frame" x="20" y="176" width="374" height="686"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="tmb-Sp-mWP" detailTextLabel="Awg-h6-eoN" imageView="lx7-TG-PCq" style="IBUITableViewCellStyleSubtitle" id="BgS-Ms-J3i">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BgS-Ms-J3i" id="eiS-BE-5vD">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Foundation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tmb-Sp-mWP">
-                                                    <rect key="frame" x="80" y="5" width="86" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Lorem Ipsum sit amet dolor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Awg-h6-eoN">
-                                                    <rect key="frame" x="80" y="25.5" width="154.5" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Rectangle Copy" id="lx7-TG-PCq">
-                                                    <rect key="frame" x="20" y="0.0" width="45" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -109,6 +79,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Cari" id="wn0-CT-ACk"/>
                     <connections>
+                        <outlet property="listOfSearch" destination="c9G-aE-q8O" id="SJG-Ta-0we"/>
                         <outlet property="searchDisplayController" destination="97n-SS-1fH" id="J4Y-rQ-VGd"/>
                     </connections>
                 </viewController>
@@ -173,7 +144,4 @@
             <point key="canvasLocation" x="119" y="708"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Rectangle Copy" width="125" height="120"/>
-    </resources>
 </document>
