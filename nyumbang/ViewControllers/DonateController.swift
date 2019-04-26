@@ -57,7 +57,7 @@ extension DonateController: UITableViewDelegate, UITableViewDataSource {
         let currentDonation = tableView.cellForRow(at: indexPath!) as! OnGoingDonateTableViewCell
         
         guard let donateDetailVC = segue.destination as? DonateDetailController else { return }
-        print(currentDonation.donation)
+        
         donateDetailVC.donation = currentDonation.donation
         
     }
