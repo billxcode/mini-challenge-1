@@ -23,14 +23,22 @@ class DiscoverController: UIViewController {
     
     func createArray() -> [Yayasan] {
         
-        let video1 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
-        let video2 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
-        let video3 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
-        let video4 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
-        let video5 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
-        let video6 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
         
-        return [video1, video2, video3, video4, video5, video6]
+        let video1 =  Yayasan(title: "Yayasan Sabilillah Malang", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video2 =  Yayasan(title: "Lembaga Amil Zakat NU", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video3 =  Yayasan(title: "Lembaga Amil Zakat Muhammadiyah", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video4 =  Yayasan(title: "Badan Amil Zakat Nasional", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video5 =  Yayasan(title: "Active Cepat Tanggap", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video6 =  Yayasan(title: "LazisNU", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video7 =  Yayasan(title: "Yayasan Sabilillah Malang", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video8 =  Yayasan(title: "Lembaga Amil Zakat NU", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video9 =  Yayasan(title: "Lembaga Amil Zakat Muhammadiyah", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video10 =  Yayasan(title: "Badan Amil Zakat Nasional", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video11 =  Yayasan(title: "Active Cepat Tanggap", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video12 =  Yayasan(title: "LazisNU", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        
+        return [video1, video2, video3, video4, video5, video6, video7, video8, video9, video10, video11, video12]
     }
     
     @IBOutlet weak var searchSomething: UISearchBar!
