@@ -15,10 +15,15 @@ class OnGoingDonateTableViewCell: UITableViewCell {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
+    var donation: Donation!
+    
     func setDonation(donation: Donation) {
+        
+        self.donation = donation
         eventNameLabel.text = donation.eventName
-//        reamingLabel.text = donation.eventReaming
-//        statusLabel.text = donation.statusDonate
-//        dateLabel.text = donation.dateDonate
+        reamingLabel.text = donation.eventReaming
+        statusLabel.text = donation.statusDonate
+        dateLabel.text = donation.dateDonate
+        
     }
 }

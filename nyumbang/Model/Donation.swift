@@ -12,16 +12,16 @@ import UIKit
 class Donation {
     
     var eventName: String
-//    var eventReaming: String
-//    var statusDonate: String
-//    var dateDonate: String
+    var eventReaming: String
+    var statusDonate: String
+    var dateDonate: String
     
 
-    init(eventName: String ) {
-        self.eventName = eventName
-//        self.eventReaming = eventReaming
-//        self.statusDonate = status
-//        self.dateDonate = date
+    init(name: String, reaming: String, status: String, date: String ) {
+        self.eventName = name
+        self.eventReaming = reaming
+        self.statusDonate = status
+        self.dateDonate = date
     }
 
 }

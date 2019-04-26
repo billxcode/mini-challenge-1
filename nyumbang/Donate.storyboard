@@ -178,7 +178,7 @@
         <!--Detail Donate View Controller-->
         <scene sceneID="G2q-Pe-IQ2">
             <objects>
-                <viewController title="Detail Donate" id="Oj4-pw-8ab" userLabel="Detail Donate View Controller" sceneMemberID="viewController">
+                <viewController title="Detail Donate" id="Oj4-pw-8ab" userLabel="Detail Donate View Controller" customClass="DonateDetailController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="No7-Ps-ZgP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,14 +191,24 @@
                                     <segue destination="Y4c-2w-Mre" kind="show" id="YRC-Rb-VpP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkx-0V-tbh">
+                                <rect key="frame" x="20" y="119" width="374" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0Cv-Gk-LhQ"/>
                     </view>
+                    <connections>
+                        <outlet property="eventNameLabel" destination="Qkx-0V-tbh" id="5Xy-Tt-47X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yl4-qB-0Ii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="-239"/>
+            <point key="canvasLocation" x="672.46376811594212" y="-239.0625"/>
         </scene>
     </scenes>
 </document>
