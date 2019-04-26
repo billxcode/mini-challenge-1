@@ -12,9 +12,25 @@ class DiscoverController: UIViewController {
     
     @IBOutlet weak var listOfSearch: UITableView!
     
+    var yayasan: [Yayasan] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        yayasan = createArray()
+    }
+    
+    
+    func createArray() -> [Yayasan] {
         
+        let video1 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video2 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video3 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video4 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video5 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        let video6 =  Yayasan(title: "Bill", description: "Tanthowi", photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        
+        return [video1, video2, video3, video4, video5, video6]
     }
     
     @IBOutlet weak var searchSomething: UISearchBar!
@@ -33,4 +49,21 @@ class DiscoverController: UIViewController {
         self.navigationController?.navigationBar.isHidden = false
     }
 
+}
+
+
+extension DiscoverController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return yayasan.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let yayasanKita = yayasan[indexPath.row]
+        let cell = listOfSearch.dequeueReusableCell(withIdentifier: "YayasanCell") as! YayasanCell
+        cell.setFoundation(foundation: yayasanKita)
+        
+        return cell
+    }
 }
