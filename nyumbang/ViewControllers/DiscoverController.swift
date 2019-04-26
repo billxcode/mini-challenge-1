@@ -9,11 +9,15 @@
 import UIKit
 
 class DiscoverController: UIViewController {
-
+    
+    @IBOutlet weak var listOfSearch: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
+    @IBOutlet weak var searchSomething: UISearchBar!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
