@@ -182,7 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F4708522272304F002B51BC /* OnGoingDonateTableViewCell.swift in Sources */,
+				B09317F42272F0F500F6DCC0 /* imageSliderCollectionCell.swift in Sources */,
 				7F2FA65A2270CFB400381683 /* DiscoverController.swift in Sources */,
 				7F2FA65E2270E11700381683 /* DonateController.swift in Sources */,
 				7F47085422723CCB002B51BC /* Donation.swift in Sources */,
