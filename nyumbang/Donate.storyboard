@@ -14,7 +14,7 @@
         <scene sceneID="2eu-nj-Jy5">
             <objects>
                 <navigationController id="9b8-Xb-qVw" userLabel="Donate" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Donate" id="3U2-4J-i64"/>
+                    <tabBarItem key="tabBarItem" title="Donate" image="compose" id="3U2-4J-i64"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Anx-WT-ylm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -346,6 +346,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="compose" width="31" height="30"/>
         <image name="markLocation" width="6" height="15"/>
     </resources>
 </document>
