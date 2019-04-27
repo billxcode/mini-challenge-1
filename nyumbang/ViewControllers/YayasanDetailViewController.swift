@@ -20,7 +20,7 @@ class YayasanDetailViewController: UIViewController {
         
         titleFoundation.text = yayasan?.title
         photoFoundation.image = yayasan?.photo
-        placeFoundation.text = yayasan?.place
+//        placeFoundation.text = yayasan?.place
         
         // Do any additional setup after loading the view.
     }
