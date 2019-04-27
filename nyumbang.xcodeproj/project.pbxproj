@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7F19DC8322737B8800E60BF1 /* DonateHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19DC8222737B8800E60BF1 /* DonateHistoryController.swift */; };
-		7F19DC85227411C600E60BF1 /* DiscoveryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717610722735059006F9C08 /* DiscoveryDetailController.swift */; };
 		7F2FA6452270C0E900381683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2FA6442270C0E900381683 /* AppDelegate.swift */; };
 		7F2FA64A2270C0E900381683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2FA6482270C0E900381683 /* Main.storyboard */; };
 		7F2FA64C2270C0EA00381683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2FA64B2270C0EA00381683 /* Assets.xcassets */; };
@@ -24,6 +23,8 @@
 		B09317FB22731B1700F6DCC0 /* ImageSliderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09317FA22731B1700F6DCC0 /* ImageSliderCollectionCell.swift */; };
 		B71761042273097C006F9C08 /* YayasanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71761032273097C006F9C08 /* YayasanCell.swift */; };
 		B717610622730B19006F9C08 /* Yayasan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717610522730B19006F9C08 /* Yayasan.swift */; };
+		B7DE8C5C2274389100AACCFA /* YayasanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE8C5B2274389100AACCFA /* YayasanViewController.swift */; };
+		B7DE8C5E22747B4000AACCFA /* YayasanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE8C5D22747B4000AACCFA /* YayasanDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +46,8 @@
 		B09317FA22731B1700F6DCC0 /* ImageSliderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderCollectionCell.swift; sourceTree = "<group>"; };
 		B71761032273097C006F9C08 /* YayasanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayasanCell.swift; sourceTree = "<group>"; };
 		B717610522730B19006F9C08 /* Yayasan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yayasan.swift; sourceTree = "<group>"; };
-		B717610722735059006F9C08 /* DiscoveryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryDetailController.swift; sourceTree = "<group>"; };
+		B7DE8C5B2274389100AACCFA /* YayasanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayasanViewController.swift; sourceTree = "<group>"; };
+		B7DE8C5D22747B4000AACCFA /* YayasanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayasanDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +100,11 @@
 			isa = PBXGroup;
 			children = (
 				7F2FA6592270CFB400381683 /* DiscoverController.swift */,
-				B717610722735059006F9C08 /* DiscoveryDetailController.swift */,
 				7F2FA65D2270E11700381683 /* DonateController.swift */,
 				7FDA4F89227331E4000C676A /* DonateDetailController.swift */,
 				7F19DC8222737B8800E60BF1 /* DonateHistoryController.swift */,
+				B7DE8C5D22747B4000AACCFA /* YayasanDetailViewController.swift */,
+				B7DE8C5B2274389100AACCFA /* YayasanViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -198,8 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F2FA65A2270CFB400381683 /* DiscoverController.swift in Sources */,
-				7F19DC85227411C600E60BF1 /* DiscoveryDetailController.swift in Sources */,
 				7F2FA65E2270E11700381683 /* DonateController.swift in Sources */,
+				B7DE8C5C2274389100AACCFA /* YayasanViewController.swift in Sources */,
+				B7DE8C5E22747B4000AACCFA /* YayasanDetailViewController.swift in Sources */,
 				7F47085422723CCB002B51BC /* Donation.swift in Sources */,
 				B71761042273097C006F9C08 /* YayasanCell.swift in Sources */,
 				B09317FB22731B1700F6DCC0 /* ImageSliderCollectionCell.swift in Sources */,
@@ -355,13 +359,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UUHXR699G4;
+				DEVELOPMENT_TEAM = C476YGMRCM;
 				INFOPLIST_FILE = nyumbang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kelompok6.nyumbang;
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.nyumbang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
@@ -374,13 +378,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UUHXR699G4;
+				DEVELOPMENT_TEAM = C476YGMRCM;
 				INFOPLIST_FILE = nyumbang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kelompok6.nyumbang;
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.nyumbang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
