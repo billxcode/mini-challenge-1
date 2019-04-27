@@ -9,17 +9,11 @@
 import UIKit
 
 class DiscoveryDetailController: UIViewController {
-    @IBOutlet weak var thumbnailDetailDiscovery: UIImageView!
-    @IBOutlet weak var titleDetailDiscovery: UILabel!
     
     var yayasan: Yayasan!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        titleDetailDiscovery.text = yayasan?.title
-        thumbnailDetailDiscovery.image = yayasan?.photo
-
         // Do any additional setup after loading the view.
     }
     

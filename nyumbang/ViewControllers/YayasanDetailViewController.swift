@@ -13,9 +13,15 @@ class YayasanDetailViewController: UIViewController {
     @IBOutlet weak var placeFoundation: UILabel!
     @IBOutlet weak var photoFoundation: UIImageView!
     
+    var yayasan: Yayasan!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        titleFoundation.text = yayasan?.title
+        photoFoundation.image = yayasan?.photo
+        placeFoundation.text = yayasan?.place
+        
         // Do any additional setup after loading the view.
     }
     

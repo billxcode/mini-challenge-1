@@ -228,7 +228,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="860.86956521739137" y="-38.169642857142854"/>
+            <point key="canvasLocation" x="855" y="-38"/>
         </scene>
         <!--Detail Event View Controller-->
         <scene sceneID="xbp-F5-gVA">
@@ -443,16 +443,14 @@
                         <viewLayoutGuide key="safeArea" id="MRd-42-1Hi"/>
                     </view>
                     <connections>
-                        <outlet property="photoFoundation" destination="zjm-B6-CYn" id="1vD-Nx-8ek"/>
-                        <outlet property="placeFoundation" destination="XvV-cp-Ec1" id="sB2-3t-xGz"/>
-                        <outlet property="thumbnailDetailDiscovery" destination="TEq-RD-6k6" id="9NR-Kn-LMP"/>
-                        <outlet property="titleDetailDiscovery" destination="cqi-YX-Ld0" id="SC0-fM-KCK"/>
+                        <outlet property="photoFoundation" destination="zjm-B6-CYn" id="pgu-em-pEn"/>
+                        <outlet property="placeFoundation" destination="XvV-cp-Ec1" id="tG3-c9-wFy"/>
                         <outlet property="titleFoundation" destination="cqi-YX-Ld0" id="hZ9-3B-MYK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b19-pw-Kru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1702.8985507246377" y="-38.169642857142854"/>
+            <point key="canvasLocation" x="1743" y="-38"/>
         </scene>
     </scenes>
     <resources>
