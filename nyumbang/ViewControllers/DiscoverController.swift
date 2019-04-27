@@ -62,13 +62,11 @@ class DiscoverController: UIViewController {
         let indexPath = listOfSearch.indexPathForSelectedRow
         let currentDiscovery = listOfSearch.cellForRow(at: indexPath!) as! YayasanCell
         
-        guard let discoveryDetail = segue.destination as? DiscoveryDetailControllerViewController else { return }
-        print(currentDiscovery.titleFoundation)
-        print(currentDiscovery.descriptionFoundation)
-        print(currentDiscovery.thumbnailFoundation)
-        discoveryDetail.titleDetailDiscovery = currentDiscovery.titleFoundation
-        discoveryDetail.descriptionDetailDiscovery = currentDiscovery.descriptionFoundation
-        discoveryDetail.thumbnailDetailDiscovery = currentDiscovery.thumbnailFoundation
+        guard let discoveryDetail = segue.destination as? DiscoveryDetailController else { return }
+//        print(currentDiscovery.titleFoundation)
+//        print(currentDiscovery.descriptionFoundation)
+//        print(currentDiscovery.thumbnailFoundation)
+        discoveryDetail.yayasan = currentDiscovery.yayasan
         
         
         

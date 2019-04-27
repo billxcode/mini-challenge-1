@@ -165,7 +165,7 @@
         <!--Detail Event View Controller-->
         <scene sceneID="xbp-F5-gVA">
             <objects>
-                <viewController title="Detail Event" id="GCt-gW-7Eh" userLabel="Detail Event View Controller" customClass="DiscoveryDetailController" sceneMemberID="viewController">
+                <viewController title="Detail Event" id="GCt-gW-7Eh" userLabel="Detail Event View Controller" customClass="DiscoveryDetailController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JOL-3V-G4E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
