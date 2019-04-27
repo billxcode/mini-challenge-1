@@ -21,6 +21,15 @@ class DonateController: UIViewController {
         
         donations = createDonations()
         
+        let historyButton = UIBarButtonItem(title: "History", style: .plain, target: self, action: #selector(toHistroyButton))
+        
+        self.navigationItem.rightBarButtonItem = historyButton
+        
+    }
+    
+    @objc func toHistroyButton(_ sender: Any) {
+        performSegue(withIdentifier: "donateHistorySegue", sender: self)
+
     }
     
     func createDonations() -> [Donation] {
@@ -53,6 +62,7 @@ extension DonateController: UITableViewDelegate, UITableViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        if segue.identifier == nil {
         let indexPath = tableView.indexPathForSelectedRow
         let currentDonation = tableView.cellForRow(at: indexPath!) as! OnGoingDonateTableViewCell
         
@@ -60,6 +70,7 @@ extension DonateController: UITableViewDelegate, UITableViewDataSource {
         donateDetailVC.donation = currentDonation.donation
         
         donateDetailVC.hidesBottomBarWhenPushed = true
+        }
     }
     
 }

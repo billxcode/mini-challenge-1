@@ -129,6 +129,7 @@
                     <navigationItem key="navigationItem" title="On Going Donations" id="dDc-7Z-MYo"/>
                     <connections>
                         <outlet property="tableView" destination="ZWL-do-6Er" id="utD-4d-uNu"/>
+                        <segue destination="hzz-N2-Ol9" kind="show" identifier="donateHistorySegue" id="St6-8s-lYI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4Q-ee-HD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -139,8 +140,8 @@
         <scene sceneID="2ZJ-sD-JqA">
             <objects>
                 <viewController title="Donate History" id="hzz-N2-Ol9" userLabel="Donate History View Controller" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CFW-OL-CtW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="donateHistory" id="CFW-OL-CtW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fMk-9M-pXb">
