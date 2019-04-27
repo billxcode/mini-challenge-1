@@ -59,6 +59,9 @@
                                     <segment title="Foundation"/>
                                     <segment title="Event"/>
                                 </segments>
+                                <connections>
+                                    <action selector="filterSearch:" destination="3bZ-wK-cil" eventType="valueChanged" id="c9X-F6-Erb"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c9G-aE-q8O">
                                 <rect key="frame" x="20" y="176" width="374" height="686"/>

@@ -17,11 +17,19 @@ class DiscoverController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        yayasan = createArray()
+        yayasan = createYayasanArray()
     }
     
+    @IBAction func filterSearch(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex==0 {
+            yayasan = createYayasanArray()
+        }else{
+            yayasan = createAcaraArray()
+        }
+        listOfSearch.reloadData()
+    }
     
-    func createArray() -> [Yayasan] {
+    func createYayasanArray() -> [Yayasan] {
         
         let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
         
@@ -39,6 +47,26 @@ class DiscoverController: UIViewController {
         let video12 =  Yayasan(title: "LazisNU", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
         
         return [video1, video2, video3, video4, video5, video6, video7, video8, video9, video10, video11, video12]
+    }
+    
+    func createAcaraArray() -> [Yayasan] {
+        
+        let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+        
+        let video1 =  Yayasan(title: "Penggalangan Barang Kantor Malang", description: description, photo: UIImage(imageLiteralResourceName: "vlog-4.png"))
+        let video2 =  Yayasan(title: "Charity for life", description: description, photo: UIImage(imageLiteralResourceName: "buku.png"))
+        let video3 =  Yayasan(title: "Buku anda membangun bangsa", description: description, photo: UIImage(imageLiteralResourceName: "dev-setup.png"))
+        let video4 =  Yayasan(title: "Hidup indah dengan beramal", description: description, photo: UIImage(imageLiteralResourceName: "pangan.png"))
+        let video5 =  Yayasan(title: "Amal Festival", description: description, photo: UIImage(imageLiteralResourceName: "palu.png"))
+        let video6 =  Yayasan(title: "Muslim Expo and Amal", description: description, photo: UIImage(imageLiteralResourceName: "vlog-4.png"))
+        let video7 =  Yayasan(title: "Hari jadi Malang bersama Charity", description: description, photo: UIImage(imageLiteralResourceName: "ss-delegates.png"))
+        let video8 =  Yayasan(title: "Romadhon berzakat", description: description, photo: UIImage(imageLiteralResourceName: "int-overview.png"))
+        let video9 =  Yayasan(title: "Zakat Mal untuk membantu sesama", description: description, photo: UIImage(imageLiteralResourceName: "buku.png"))
+        let video10 =  Yayasan(title: "Baznas Berbagi", description: description, photo: UIImage(imageLiteralResourceName: "pangan.png"))
+        let video11 =  Yayasan(title: "Indonesia charity", description: description, photo: UIImage(imageLiteralResourceName: "palu.png"))
+        let video12 =  Yayasan(title: "NU beramal", description: description, photo: UIImage(imageLiteralResourceName: "beginner-first-app.png"))
+        
+        return [video5, video2, video7, video3, video1, video6, video4, video8, video9, video10, video11, video12]
     }
     
     @IBOutlet weak var searchSomething: UISearchBar!
