@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DiscoveryDetailControllerViewController: UIViewController {
+class DiscoveryDetailController: UIViewController {
     @IBOutlet weak var thumbnailDetailDiscovery: UIImageView!
     @IBOutlet weak var titleDetailDiscovery: UILabel!
     @IBOutlet weak var descriptionDetailDiscovery: UILabel!

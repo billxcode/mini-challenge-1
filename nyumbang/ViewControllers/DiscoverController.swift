@@ -56,23 +56,6 @@ class DiscoverController: UIViewController {
         // Show the navigation bar
         self.navigationController?.navigationBar.isHidden = false
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let indexPath = listOfSearch.indexPathForSelectedRow
-        let currentDiscovery = listOfSearch.cellForRow(at: indexPath!) as! YayasanCell
-        
-        guard let discoveryDetail = segue.destination as? DiscoveryDetailControllerViewController else { return }
-        print(currentDiscovery.titleFoundation)
-        print(currentDiscovery.descriptionFoundation)
-        print(currentDiscovery.thumbnailFoundation)
-        discoveryDetail.titleDetailDiscovery = currentDiscovery.titleFoundation
-        discoveryDetail.descriptionDetailDiscovery = currentDiscovery.descriptionFoundation
-        discoveryDetail.thumbnailDetailDiscovery = currentDiscovery.thumbnailFoundation
-        
-        
-        
-    }
 
 }
 
@@ -90,5 +73,15 @@ extension DiscoverController: UITableViewDataSource, UITableViewDelegate {
         cell.setFoundation(foundation: yayasanKita)
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let indexPath = listOfSearch.indexPathForSelectedRow
+        let currentDiscovery = listOfSearch.cellForRow(at: indexPath!) as! YayasanCell
+        
+        guard let discoveryDetail = segue.destination as? DiscoveryDetailController else { return }
+        discoveryDetail.yayasan = currentDiscovery.yayasan
+        
     }
 }
