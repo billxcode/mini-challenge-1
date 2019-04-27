@@ -13,7 +13,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="THt-PP-BKF">
             <objects>
-                <tabBarController id="4Xi-Md-y1C" sceneMemberID="viewController">
+                <tabBarController hidesBottomBarWhenPushed="YES" id="4Xi-Md-y1C" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hm6-gN-kkD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

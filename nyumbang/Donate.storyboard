@@ -107,7 +107,7 @@
                                             <outlet property="eventNameLabel" destination="0fc-ej-AFM" id="yu2-YU-cM4"/>
                                             <outlet property="reamingLabel" destination="9ei-LK-ISU" id="m2U-72-pE3"/>
                                             <outlet property="statusLabel" destination="hxq-vt-h1i" id="qFp-2O-mlb"/>
-                                            <segue destination="Oj4-pw-8ab" kind="show" id="Jdw-Se-zLm"/>
+                                            <segue destination="Oj4-pw-8ab" kind="show" id="d5I-y2-06k"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -126,10 +126,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IyQ-vr-q7K"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dDc-7Z-MYo"/>
+                    <navigationItem key="navigationItem" title="On Going Donations" id="dDc-7Z-MYo"/>
                     <connections>
-                        <outlet property="navigationBarItem" destination="dDc-7Z-MYo" id="lVW-1j-7jP"/>
                         <outlet property="tableView" destination="ZWL-do-6Er" id="utD-4d-uNu"/>
+                        <segue destination="hzz-N2-Ol9" kind="show" identifier="donateHistorySegue" id="St6-8s-lYI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4Q-ee-HD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,8 +140,8 @@
         <scene sceneID="2ZJ-sD-JqA">
             <objects>
                 <viewController title="Donate History" id="hzz-N2-Ol9" userLabel="Donate History View Controller" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CFW-OL-CtW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="donateHistory" id="CFW-OL-CtW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fMk-9M-pXb">
@@ -179,7 +179,7 @@
         <scene sceneID="G2q-Pe-IQ2">
             <objects>
                 <viewController title="Detail Donate" id="Oj4-pw-8ab" userLabel="Detail Donate View Controller" customClass="DonateDetailController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="No7-Ps-ZgP">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="donationDetails" id="No7-Ps-ZgP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

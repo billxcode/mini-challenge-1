@@ -56,6 +56,21 @@ class DiscoverController: UIViewController {
         // Show the navigation bar
         self.navigationController?.navigationBar.isHidden = false
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let indexPath = listOfSearch.indexPathForSelectedRow
+        let currentDiscovery = listOfSearch.cellForRow(at: indexPath!) as! YayasanCell
+        
+        guard let discoveryDetail = segue.destination as? DiscoveryDetailController else { return }
+//        print(currentDiscovery.titleFoundation)
+//        print(currentDiscovery.descriptionFoundation)
+//        print(currentDiscovery.thumbnailFoundation)
+        discoveryDetail.yayasan = currentDiscovery.yayasan
+        
+        
+        
+    }
 
 }
 

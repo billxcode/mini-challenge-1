@@ -16,8 +16,9 @@ class DonateDetailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        eventNameLabel.text = donation?.eventName
+        
+        eventNameLabel.text = donation.eventName
+        
     }
     
 
