@@ -12,7 +12,6 @@ class DonateController: UIViewController {
     
     var donations: [Donation] = []
     
-    
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -36,9 +35,9 @@ class DonateController: UIViewController {
     
     func createDonations() -> [Donation] {
         
-        let donation1 = Donation.init(name: "Galang Dana Untuk Tsunami", reaming: "2 Days Reaming", status: "Finding Driver", date: "3 April, 19:21 PM")
-        let donation2 = Donation.init(name: "Galang Dana Untuk Banjir", reaming: "One Days Reaming", status: "Finding Driver", date: "1 April, 09:29 PM")
-        let donation3 = Donation.init(name: "Galang Dana Untuk Banjir", reaming: "One Days Reaming", status: "Finding Driver", date: "28 March, 09:29 PM")
+        let donation1 = Donation.init(name: "Galang Dana Untuk Tsunami", reaming: "4 Days Left", status: "Finding Driver", date: "6 April, 2:16 PM")
+        let donation2 = Donation.init(name: "Event Name", reaming: "2 Days Left", status: "Finding Driver", date: "6 April, 2:16 PM")
+        let donation3 = Donation.init(name: "Event Name", reaming: "Overdue", status: "Finding Driver", date: "28 March, 09:29 PM")
         
         return [donation1, donation2, donation3]
     }
@@ -65,14 +64,16 @@ extension DonateController: UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == nil {
-        let indexPath = tableView.indexPathForSelectedRow
-        let currentDonation = tableView.cellForRow(at: indexPath!) as! OnGoingDonateTableViewCell
-        
-        guard let donateDetailVC = segue.destination as? DonateDetailController else { return }
-        donateDetailVC.donation = currentDonation.donation
-        
-        donateDetailVC.hidesBottomBarWhenPushed = true
+            
+            let indexPath = tableView.indexPathForSelectedRow
+            let currentDonation = tableView.cellForRow(at: indexPath!) as! OnGoingDonateTableViewCell
+            
+            guard let donateDetailVC = segue.destination as? DonateDetailController else { return }
+            
+            donateDetailVC.donation = currentDonation.donation
+            
         }
+        
     }
     
 }
