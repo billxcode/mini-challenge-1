@@ -91,7 +91,7 @@
         <scene sceneID="IpC-uO-tRP">
             <objects>
                 <viewControllerPlaceholder storyboardName="Discover" id="GGw-yf-mjf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="0j3-1P-i6M"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="0j3-1P-i6M"/>
                     <navigationItem key="navigationItem" id="vRx-on-s6V"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xBC-7U-Ch3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -102,7 +102,7 @@
         <scene sceneID="FBN-AV-y0K">
             <objects>
                 <viewControllerPlaceholder storyboardName="Donate" id="CY4-kk-qUU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="b5O-MW-WBw"/>
+                    <tabBarItem key="tabBarItem" title="Donate" id="b5O-MW-WBw"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnd-Ad-MIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
