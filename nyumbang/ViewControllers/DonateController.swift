@@ -21,9 +21,11 @@ class DonateController: UIViewController {
         
         donations = createDonations()
         
-        let historyButton = UIBarButtonItem(title: "History", style: .plain, target: self, action: #selector(toHistroyButton))
+        let iconClock = UIImage(named: "clockIcon")
+        let historyButton = UIBarButtonItem(image: iconClock, landscapeImagePhone: iconClock, style: .plain, target: self, action: #selector(toHistroyButton))
         
         self.navigationItem.rightBarButtonItem = historyButton
+        self.navigationItem.rightBarButtonItem?.tintColor = .black
         
     }
     
