@@ -46,22 +46,159 @@
                                 <rect key="frame" x="0.0" y="144" width="414" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQc-1o-eae">
-                                        <rect key="frame" x="10" y="10" width="75" height="27.5"/>
+                                        <rect key="frame" x="10" y="20" width="75" height="27.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65k-vf-qox">
-                                        <rect key="frame" x="350" y="10" width="54" height="30"/>
+                                        <rect key="frame" x="350" y="20" width="54" height="30"/>
                                         <state key="normal" title="See all.."/>
                                     </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llz-Qu-3Sd">
+                                        <rect key="frame" x="10" y="70" width="394" height="200"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o80-6x-1KI">
+                                                <rect key="frame" x="0.0" y="0.0" width="617" height="200"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sA-2g-RTN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="200"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle Copy" translatesAutoresizingMaskIntoConstraints="NO" id="i59-nK-rnH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="120"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7z-SV-gjZ">
+                                                                <rect key="frame" x="0.0" y="130" width="147" height="61"/>
+                                                                <string key="text">Galang Dana Untuk
+Tsunami Palu…</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="i59-nK-rnH" firstAttribute="top" secondItem="8sA-2g-RTN" secondAttribute="top" id="07K-kZ-D0k"/>
+                                                            <constraint firstItem="i59-nK-rnH" firstAttribute="leading" secondItem="8sA-2g-RTN" secondAttribute="leading" id="1c2-AM-gei"/>
+                                                            <constraint firstAttribute="trailing" secondItem="i59-nK-rnH" secondAttribute="trailing" id="B2H-ZH-BSl"/>
+                                                            <constraint firstAttribute="trailing" secondItem="f7z-SV-gjZ" secondAttribute="trailing" id="LDZ-jf-yub"/>
+                                                            <constraint firstItem="f7z-SV-gjZ" firstAttribute="top" secondItem="i59-nK-rnH" secondAttribute="bottom" constant="10" id="Q8S-fV-yht"/>
+                                                            <constraint firstItem="f7z-SV-gjZ" firstAttribute="leading" secondItem="8sA-2g-RTN" secondAttribute="leading" id="VHd-G8-IMR"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELn-rB-sOu">
+                                                        <rect key="frame" x="157" y="0.0" width="146.5" height="200"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginner-first-app" translatesAutoresizingMaskIntoConstraints="NO" id="o8A-Rc-1pp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="146.5" height="125"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="125" id="0Yn-aE-O4k"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvk-E4-wLR">
+                                                                <rect key="frame" x="0.0" y="135" width="146.5" height="61"/>
+                                                                <string key="text">Galang Dana Untuk
+Tsunami Palu…</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="o8A-Rc-1pp" secondAttribute="trailing" id="6c5-D3-fyc"/>
+                                                            <constraint firstItem="pvk-E4-wLR" firstAttribute="leading" secondItem="ELn-rB-sOu" secondAttribute="leading" id="J8O-mY-Ni5"/>
+                                                            <constraint firstItem="o8A-Rc-1pp" firstAttribute="leading" secondItem="ELn-rB-sOu" secondAttribute="leading" id="M6h-I7-oQ7"/>
+                                                            <constraint firstAttribute="trailing" secondItem="pvk-E4-wLR" secondAttribute="trailing" id="U6T-xl-UAK"/>
+                                                            <constraint firstItem="o8A-Rc-1pp" firstAttribute="top" secondItem="ELn-rB-sOu" secondAttribute="top" id="bch-Ho-6s0"/>
+                                                            <constraint firstItem="pvk-E4-wLR" firstAttribute="top" secondItem="o8A-Rc-1pp" secondAttribute="bottom" constant="10" id="cIT-Tc-sna"/>
+                                                            <constraint firstAttribute="bottom" secondItem="o8A-Rc-1pp" secondAttribute="bottom" constant="75" id="xpG-dy-s0C"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xA4-4e-N2Q">
+                                                        <rect key="frame" x="313.5" y="0.0" width="147" height="200"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="palu" translatesAutoresizingMaskIntoConstraints="NO" id="05Z-1Y-dXQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="125"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="125" id="4JO-NG-B5e"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOZ-RU-i1d">
+                                                                <rect key="frame" x="0.0" y="135" width="147" height="61"/>
+                                                                <string key="text">Galang Dana Untuk
+Tsunami Palu…</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="bOZ-RU-i1d" secondAttribute="trailing" id="BwA-Wf-4Uc"/>
+                                                            <constraint firstItem="bOZ-RU-i1d" firstAttribute="top" secondItem="05Z-1Y-dXQ" secondAttribute="bottom" constant="10" id="DiA-ha-TVj"/>
+                                                            <constraint firstItem="bOZ-RU-i1d" firstAttribute="leading" secondItem="xA4-4e-N2Q" secondAttribute="leading" id="EfC-iq-vmR"/>
+                                                            <constraint firstItem="05Z-1Y-dXQ" firstAttribute="top" secondItem="xA4-4e-N2Q" secondAttribute="top" id="HAz-Dp-Baw"/>
+                                                            <constraint firstItem="05Z-1Y-dXQ" firstAttribute="leading" secondItem="xA4-4e-N2Q" secondAttribute="leading" id="KYE-ZZ-rrN"/>
+                                                            <constraint firstItem="bOZ-RU-i1d" firstAttribute="leading" secondItem="xA4-4e-N2Q" secondAttribute="leading" id="MhH-JP-vRp"/>
+                                                            <constraint firstItem="bOZ-RU-i1d" firstAttribute="top" secondItem="05Z-1Y-dXQ" secondAttribute="bottom" constant="10" id="VzU-LA-5hm"/>
+                                                            <constraint firstAttribute="trailing" secondItem="05Z-1Y-dXQ" secondAttribute="trailing" id="Yau-Ao-DME"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bOZ-RU-i1d" secondAttribute="trailing" id="efW-bF-7pQ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whN-6V-Xjn">
+                                                        <rect key="frame" x="470.5" y="0.0" width="146.5" height="200"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vlog-4" translatesAutoresizingMaskIntoConstraints="NO" id="wst-RI-0WO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="146.5" height="125"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="125" id="srQ-HP-cS3"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuT-Lg-0b7">
+                                                                <rect key="frame" x="0.0" y="135" width="146.5" height="65"/>
+                                                                <string key="text">Galang Dana Untuk
+Tsunami Palu…</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="HuT-Lg-0b7" firstAttribute="top" secondItem="wst-RI-0WO" secondAttribute="bottom" constant="10" id="244-Gc-sw5"/>
+                                                            <constraint firstAttribute="trailing" secondItem="HuT-Lg-0b7" secondAttribute="trailing" id="HRd-5N-IM9"/>
+                                                            <constraint firstAttribute="trailing" secondItem="wst-RI-0WO" secondAttribute="trailing" id="JFa-54-ONr"/>
+                                                            <constraint firstItem="HuT-Lg-0b7" firstAttribute="leading" secondItem="whN-6V-Xjn" secondAttribute="leading" id="KSm-wy-sw3"/>
+                                                            <constraint firstItem="wst-RI-0WO" firstAttribute="top" secondItem="whN-6V-Xjn" secondAttribute="top" id="oeh-vK-0G4"/>
+                                                            <constraint firstAttribute="bottom" secondItem="HuT-Lg-0b7" secondAttribute="bottom" id="xa8-F7-Bid"/>
+                                                            <constraint firstItem="wst-RI-0WO" firstAttribute="leading" secondItem="whN-6V-Xjn" secondAttribute="leading" id="zj5-dh-Np6"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="617" id="XSJ-dA-XJX"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="o80-6x-1KI" firstAttribute="centerY" secondItem="Llz-Qu-3Sd" secondAttribute="centerY" id="6bU-VO-me8"/>
+                                            <constraint firstItem="o80-6x-1KI" firstAttribute="top" secondItem="Llz-Qu-3Sd" secondAttribute="top" id="9G2-yZ-7Gb"/>
+                                            <constraint firstAttribute="bottom" secondItem="o80-6x-1KI" secondAttribute="bottom" id="Bmt-wb-mRg"/>
+                                            <constraint firstAttribute="trailing" secondItem="o80-6x-1KI" secondAttribute="trailing" constant="-100" id="HuV-Ie-fDY"/>
+                                            <constraint firstItem="o80-6x-1KI" firstAttribute="leading" secondItem="Llz-Qu-3Sd" secondAttribute="leading" id="in9-fn-wdc"/>
+                                        </constraints>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="65k-vf-qox" firstAttribute="top" secondItem="4pE-9K-DBI" secondAttribute="top" constant="10" id="3SI-WR-tsU"/>
+                                    <constraint firstItem="Llz-Qu-3Sd" firstAttribute="leading" secondItem="yQc-1o-eae" secondAttribute="leading" id="0os-RD-6dO"/>
+                                    <constraint firstItem="65k-vf-qox" firstAttribute="top" secondItem="4pE-9K-DBI" secondAttribute="top" constant="20" id="3SI-WR-tsU"/>
                                     <constraint firstAttribute="trailing" secondItem="65k-vf-qox" secondAttribute="trailing" constant="10" id="Aj4-kY-CJe"/>
                                     <constraint firstItem="yQc-1o-eae" firstAttribute="leading" secondItem="4pE-9K-DBI" secondAttribute="leading" constant="10" id="Owr-Gk-BvG"/>
-                                    <constraint firstItem="yQc-1o-eae" firstAttribute="top" secondItem="4pE-9K-DBI" secondAttribute="top" constant="10" id="iaS-vB-Yo7"/>
+                                    <constraint firstItem="Llz-Qu-3Sd" firstAttribute="trailing" secondItem="65k-vf-qox" secondAttribute="trailing" id="bEn-Ug-F92"/>
+                                    <constraint firstItem="yQc-1o-eae" firstAttribute="top" secondItem="4pE-9K-DBI" secondAttribute="top" constant="20" id="iaS-vB-Yo7"/>
+                                    <constraint firstAttribute="bottom" secondItem="Llz-Qu-3Sd" secondAttribute="bottom" constant="30" id="uJh-KG-xjw"/>
                                     <constraint firstAttribute="height" constant="300" id="y1v-iQ-Oqq"/>
                                 </constraints>
                             </view>
@@ -69,7 +206,7 @@
                                 <rect key="frame" x="0.0" y="454" width="414" height="298"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yayasan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYX-tk-WOK">
-                                        <rect key="frame" x="10" y="10" width="90.5" height="28"/>
+                                        <rect key="frame" x="10" y="10" width="90.5" height="27.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -81,12 +218,19 @@
                                             <segue destination="3bZ-wK-cil" kind="show" id="8cr-cr-ZnI"/>
                                         </connections>
                                     </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2R-zS-FbI">
+                                        <rect key="frame" x="10" y="70" width="394" height="198"/>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="IMF-DU-h47" firstAttribute="top" secondItem="RQ9-f0-Pnl" secondAttribute="top" constant="10" id="5XQ-e9-r7X"/>
+                                    <constraint firstAttribute="bottom" secondItem="I2R-zS-FbI" secondAttribute="bottom" constant="30" id="A8d-Wh-ALr"/>
+                                    <constraint firstItem="I2R-zS-FbI" firstAttribute="leading" secondItem="qYX-tk-WOK" secondAttribute="leading" id="IhX-4p-kDW"/>
+                                    <constraint firstItem="I2R-zS-FbI" firstAttribute="trailing" secondItem="IMF-DU-h47" secondAttribute="trailing" id="LFq-og-bii"/>
                                     <constraint firstItem="qYX-tk-WOK" firstAttribute="top" secondItem="RQ9-f0-Pnl" secondAttribute="top" constant="10" id="OiG-iR-LkF"/>
                                     <constraint firstItem="qYX-tk-WOK" firstAttribute="leading" secondItem="RQ9-f0-Pnl" secondAttribute="leading" constant="10" id="bah-Lu-9xz"/>
+                                    <constraint firstItem="I2R-zS-FbI" firstAttribute="top" secondItem="IMF-DU-h47" secondAttribute="bottom" constant="30" id="hgf-6V-BId"/>
                                     <constraint firstAttribute="trailing" secondItem="IMF-DU-h47" secondAttribute="trailing" constant="10" id="yg9-em-dB2"/>
                                 </constraints>
                             </view>
@@ -111,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvb-r1-E0X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="-38"/>
+            <point key="canvasLocation" x="0.0" y="-38.169642857142854"/>
         </scene>
         <!--Discover View Controller-->
         <scene sceneID="OR8-b6-7bj">
@@ -457,5 +601,8 @@
         <image name="3A55B22D-564E-4EC1-9BFB-441674A83981" width="1656" height="640"/>
         <image name="71ABEA25-AD0D-41DF-8C7A-ABDB0705AD2A" width="370" height="275"/>
         <image name="Rectangle Copy" width="125" height="120"/>
+        <image name="beginner-first-app" width="960" height="540"/>
+        <image name="palu" width="414" height="298"/>
+        <image name="vlog-4" width="960" height="540"/>
     </resources>
 </document>
