@@ -13,11 +13,13 @@ class Yayasan {
     var title: String
     var description: String
     var photo: UIImage
+    var place: String
     
-    init(title: String, description: String, photo: UIImage) {
+    init(title: String, description: String, photo: UIImage, place: String) {
         self.title = title
         self.description = description
         self.photo = photo
+        self.place = place
     }
     
     

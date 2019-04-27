@@ -1,24 +1,20 @@
 //
-//  DiscoveryDetailControllerViewController.swift
+//  YayasanDetailViewController.swift
 //  nyumbang
 //
-//  Created by Bill Tanthowi Jauhari on 26/04/19.
+//  Created by Bill Tanthowi Jauhari on 27/04/19.
 //  Copyright © 2019 Apple Developer Academy - Kelompok 6. All rights reserved.
 //
 
 import UIKit
 
-class DiscoveryDetailController: UIViewController {
-    @IBOutlet weak var thumbnailDetailDiscovery: UIImageView!
-    @IBOutlet weak var titleDetailDiscovery: UILabel!
-    
-    var yayasan: Yayasan!
+class YayasanDetailViewController: UIViewController {
+    @IBOutlet weak var titleFoundation: UILabel!
+    @IBOutlet weak var placeFoundation: UILabel!
+    @IBOutlet weak var photoFoundation: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        titleDetailDiscovery.text = yayasan?.title
-        thumbnailDetailDiscovery.image = yayasan?.photo
 
         // Do any additional setup after loading the view.
     }

@@ -12,6 +12,7 @@ class YayasanCell: UITableViewCell {
     @IBOutlet weak var titleFoundation: UILabel!
     @IBOutlet weak var descriptionFoundation: UILabel!
     @IBOutlet weak var thumbnailFoundation: UIImageView!
+    @IBOutlet weak var placeFoundation: UILabel!
     
     var yayasan: Yayasan!
     
@@ -21,6 +22,8 @@ class YayasanCell: UITableViewCell {
         titleFoundation.text = foundation.title
         descriptionFoundation.text = foundation.description
         thumbnailFoundation.image = foundation.photo
+        placeFoundation.text = foundation.place
+        
     }
 
 }
