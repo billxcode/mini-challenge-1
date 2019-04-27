@@ -40,6 +40,9 @@
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Vc5-y3-1fR">
                                 <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="uLe-Er-M2S"/>
+                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pE-9K-DBI">
@@ -68,10 +71,10 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="147" height="120"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7z-SV-gjZ">
-                                                                <rect key="frame" x="0.0" y="130" width="147" height="61"/>
+                                                                <rect key="frame" x="0.0" y="130" width="147" height="38.5"/>
                                                                 <string key="text">Galang Dana Untuk
 Tsunami Palu…</string>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -96,10 +99,10 @@ Tsunami Palu…</string>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvk-E4-wLR">
-                                                                <rect key="frame" x="0.0" y="135" width="146.5" height="61"/>
+                                                                <rect key="frame" x="0.0" y="135" width="146.5" height="38.5"/>
                                                                 <string key="text">Galang Dana Untuk
 Tsunami Palu…</string>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -125,10 +128,10 @@ Tsunami Palu…</string>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOZ-RU-i1d">
-                                                                <rect key="frame" x="0.0" y="135" width="147" height="61"/>
+                                                                <rect key="frame" x="0.0" y="135" width="147" height="38.5"/>
                                                                 <string key="text">Galang Dana Untuk
 Tsunami Palu…</string>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -159,7 +162,7 @@ Tsunami Palu…</string>
                                                                 <rect key="frame" x="0.0" y="135" width="146.5" height="65"/>
                                                                 <string key="text">Galang Dana Untuk
 Tsunami Palu…</string>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -213,6 +216,9 @@ Tsunami Palu…</string>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMF-DU-h47">
                                         <rect key="frame" x="350" y="10" width="54" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="f6F-6z-O4q"/>
+                                        </constraints>
                                         <state key="normal" title="See all.."/>
                                         <connections>
                                             <segue destination="3bZ-wK-cil" kind="show" id="8cr-cr-ZnI"/>
@@ -220,17 +226,143 @@ Tsunami Palu…</string>
                                     </button>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2R-zS-FbI">
                                         <rect key="frame" x="10" y="70" width="394" height="198"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h0F-sO-c8a">
+                                                <rect key="frame" x="0.0" y="0.0" width="618" height="198"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4YS-h3-lJB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="198"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="int-overview" translatesAutoresizingMaskIntoConstraints="NO" id="UjB-wN-Ne1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="120"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="120" id="sp9-Ko-3tq"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jelang Ramadan, Berbagi Sembako…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBA-ry-vri">
+                                                                <rect key="frame" x="0.0" y="130" width="147" height="68"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="UjB-wN-Ne1" firstAttribute="leading" secondItem="4YS-h3-lJB" secondAttribute="leading" id="9fP-FT-w6j"/>
+                                                            <constraint firstAttribute="trailing" secondItem="sBA-ry-vri" secondAttribute="trailing" id="HSk-wZ-hiG"/>
+                                                            <constraint firstAttribute="bottom" secondItem="sBA-ry-vri" secondAttribute="bottom" id="JIa-DX-QCv"/>
+                                                            <constraint firstAttribute="trailing" secondItem="UjB-wN-Ne1" secondAttribute="trailing" id="KaK-J9-llB"/>
+                                                            <constraint firstAttribute="width" constant="147" id="cPS-Kv-WMC"/>
+                                                            <constraint firstItem="sBA-ry-vri" firstAttribute="leading" secondItem="4YS-h3-lJB" secondAttribute="leading" id="eMN-mL-Vfo"/>
+                                                            <constraint firstItem="UjB-wN-Ne1" firstAttribute="top" secondItem="4YS-h3-lJB" secondAttribute="top" id="fma-h5-WTa"/>
+                                                            <constraint firstItem="sBA-ry-vri" firstAttribute="top" secondItem="UjB-wN-Ne1" secondAttribute="bottom" constant="10" id="uwG-z8-grr"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKm-CN-qme">
+                                                        <rect key="frame" x="157" y="0.0" width="147" height="198"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pangan" translatesAutoresizingMaskIntoConstraints="NO" id="NVE-hh-27x">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="120"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="120" id="dJd-0m-hux"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jelang Ramadan, Berbagi Sembako…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3H-8v-SNb">
+                                                                <rect key="frame" x="0.0" y="130" width="147" height="68"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="M3H-8v-SNb" firstAttribute="top" secondItem="NVE-hh-27x" secondAttribute="bottom" constant="10" id="16Y-SU-SiN"/>
+                                                            <constraint firstAttribute="width" constant="147" id="FbC-yR-1es"/>
+                                                            <constraint firstAttribute="trailing" secondItem="NVE-hh-27x" secondAttribute="trailing" id="UgP-hA-E32"/>
+                                                            <constraint firstItem="NVE-hh-27x" firstAttribute="leading" secondItem="KKm-CN-qme" secondAttribute="leading" id="dom-7Y-bOx"/>
+                                                            <constraint firstItem="M3H-8v-SNb" firstAttribute="leading" secondItem="KKm-CN-qme" secondAttribute="leading" id="f5n-us-xQX"/>
+                                                            <constraint firstAttribute="trailing" secondItem="M3H-8v-SNb" secondAttribute="trailing" id="fWd-yr-YgH"/>
+                                                            <constraint firstItem="NVE-hh-27x" firstAttribute="top" secondItem="KKm-CN-qme" secondAttribute="top" id="gwR-QJ-uY1"/>
+                                                            <constraint firstAttribute="bottom" secondItem="M3H-8v-SNb" secondAttribute="bottom" id="mzb-Gk-bp7"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceC-al-raX">
+                                                        <rect key="frame" x="314" y="0.0" width="147" height="198"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3A55B22D-564E-4EC1-9BFB-441674A83981" translatesAutoresizingMaskIntoConstraints="NO" id="Kze-fT-48i">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="120"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="120" id="T07-4Q-wX3"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jelang Ramadan, Berbagi Sembako…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlo-5o-aKb">
+                                                                <rect key="frame" x="0.0" y="130" width="147" height="68"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Kze-fT-48i" secondAttribute="trailing" id="6nv-k7-3c4"/>
+                                                            <constraint firstItem="Kze-fT-48i" firstAttribute="top" secondItem="ceC-al-raX" secondAttribute="top" id="OiJ-gw-Ctv"/>
+                                                            <constraint firstItem="Kze-fT-48i" firstAttribute="leading" secondItem="ceC-al-raX" secondAttribute="leading" id="bqE-dK-DXA"/>
+                                                            <constraint firstAttribute="width" constant="147" id="ewQ-dB-cXi"/>
+                                                            <constraint firstAttribute="bottom" secondItem="rlo-5o-aKb" secondAttribute="bottom" id="gFe-il-Mcp"/>
+                                                            <constraint firstItem="rlo-5o-aKb" firstAttribute="top" secondItem="Kze-fT-48i" secondAttribute="bottom" constant="10" id="gqT-Jb-HtQ"/>
+                                                            <constraint firstItem="rlo-5o-aKb" firstAttribute="leading" secondItem="ceC-al-raX" secondAttribute="leading" id="yj0-Gf-Jfj"/>
+                                                            <constraint firstAttribute="trailing" secondItem="rlo-5o-aKb" secondAttribute="trailing" id="zVa-K1-bJV"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAu-Dd-sBl">
+                                                        <rect key="frame" x="471" y="0.0" width="147" height="198"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="palu" translatesAutoresizingMaskIntoConstraints="NO" id="dhJ-V9-jJR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="147" height="120"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="120" id="d0X-F1-wz6"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jelang Ramadan, Berbagi Sembako…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vR-N2-hME">
+                                                                <rect key="frame" x="0.0" y="130" width="147" height="68"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="dhJ-V9-jJR" firstAttribute="top" secondItem="sAu-Dd-sBl" secondAttribute="top" id="3xd-Uu-ray"/>
+                                                            <constraint firstItem="6vR-N2-hME" firstAttribute="top" secondItem="dhJ-V9-jJR" secondAttribute="bottom" constant="10" id="Cny-yf-Srm"/>
+                                                            <constraint firstAttribute="bottom" secondItem="6vR-N2-hME" secondAttribute="bottom" id="DBT-Cr-Hu1"/>
+                                                            <constraint firstAttribute="trailing" secondItem="6vR-N2-hME" secondAttribute="trailing" id="Rli-k8-wIE"/>
+                                                            <constraint firstAttribute="width" constant="147" id="TQ3-1F-eMA"/>
+                                                            <constraint firstItem="6vR-N2-hME" firstAttribute="leading" secondItem="sAu-Dd-sBl" secondAttribute="leading" id="bS6-Rh-0fx"/>
+                                                            <constraint firstAttribute="trailing" secondItem="dhJ-V9-jJR" secondAttribute="trailing" id="pm3-CP-njh"/>
+                                                            <constraint firstItem="dhJ-V9-jJR" firstAttribute="leading" secondItem="sAu-Dd-sBl" secondAttribute="leading" id="y8b-o0-kq3"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="h0F-sO-c8a" firstAttribute="centerY" secondItem="I2R-zS-FbI" secondAttribute="centerY" id="1Cl-q6-3Ud"/>
+                                            <constraint firstAttribute="trailing" secondItem="h0F-sO-c8a" secondAttribute="trailing" constant="-100" id="Dhu-KK-AVS"/>
+                                            <constraint firstAttribute="bottom" secondItem="h0F-sO-c8a" secondAttribute="bottom" id="LiM-us-207"/>
+                                            <constraint firstItem="h0F-sO-c8a" firstAttribute="leading" secondItem="I2R-zS-FbI" secondAttribute="leading" id="WM0-95-Wrm"/>
+                                            <constraint firstItem="h0F-sO-c8a" firstAttribute="top" secondItem="I2R-zS-FbI" secondAttribute="top" id="p6M-cA-2kD"/>
+                                        </constraints>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="IMF-DU-h47" firstAttribute="top" secondItem="RQ9-f0-Pnl" secondAttribute="top" constant="10" id="5XQ-e9-r7X"/>
                                     <constraint firstAttribute="bottom" secondItem="I2R-zS-FbI" secondAttribute="bottom" constant="30" id="A8d-Wh-ALr"/>
-                                    <constraint firstItem="I2R-zS-FbI" firstAttribute="leading" secondItem="qYX-tk-WOK" secondAttribute="leading" id="IhX-4p-kDW"/>
-                                    <constraint firstItem="I2R-zS-FbI" firstAttribute="trailing" secondItem="IMF-DU-h47" secondAttribute="trailing" id="LFq-og-bii"/>
                                     <constraint firstItem="qYX-tk-WOK" firstAttribute="top" secondItem="RQ9-f0-Pnl" secondAttribute="top" constant="10" id="OiG-iR-LkF"/>
+                                    <constraint firstItem="I2R-zS-FbI" firstAttribute="trailing" secondItem="IMF-DU-h47" secondAttribute="trailing" id="aym-mu-fuH"/>
                                     <constraint firstItem="qYX-tk-WOK" firstAttribute="leading" secondItem="RQ9-f0-Pnl" secondAttribute="leading" constant="10" id="bah-Lu-9xz"/>
-                                    <constraint firstItem="I2R-zS-FbI" firstAttribute="top" secondItem="IMF-DU-h47" secondAttribute="bottom" constant="30" id="hgf-6V-BId"/>
+                                    <constraint firstItem="I2R-zS-FbI" firstAttribute="leading" secondItem="qYX-tk-WOK" secondAttribute="leading" id="fUt-5e-Zmm"/>
+                                    <constraint firstItem="I2R-zS-FbI" firstAttribute="top" secondItem="IMF-DU-h47" secondAttribute="bottom" constant="30" id="hTi-GP-fSh"/>
                                     <constraint firstAttribute="trailing" secondItem="IMF-DU-h47" secondAttribute="trailing" constant="10" id="yg9-em-dB2"/>
                                 </constraints>
                             </view>
@@ -602,7 +734,9 @@ Tsunami Palu…</string>
         <image name="71ABEA25-AD0D-41DF-8C7A-ABDB0705AD2A" width="370" height="275"/>
         <image name="Rectangle Copy" width="125" height="120"/>
         <image name="beginner-first-app" width="960" height="540"/>
+        <image name="int-overview" width="960" height="540"/>
         <image name="palu" width="414" height="298"/>
+        <image name="pangan" width="414" height="298"/>
         <image name="vlog-4" width="960" height="540"/>
     </resources>
 </document>
