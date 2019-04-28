@@ -13,11 +13,19 @@ class DonateDetailController: UIViewController {
     var donation: Donation!
     
     @IBOutlet weak var eventNameLabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var openReportBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         eventNameLabel.text = donation.eventName
+        
+        statusLabel.layer.masksToBounds = true
+        statusLabel.layer.cornerRadius = 10
+        
+        openReportBtn.layer.masksToBounds = true
+        openReportBtn.layer.cornerRadius = 5
         
     }
     
