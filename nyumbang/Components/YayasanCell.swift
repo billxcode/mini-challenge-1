@@ -12,12 +12,18 @@ class YayasanCell: UITableViewCell {
     @IBOutlet weak var titleFoundation: UILabel!
     @IBOutlet weak var descriptionFoundation: UILabel!
     @IBOutlet weak var thumbnailFoundation: UIImageView!
+    @IBOutlet weak var placeFoundation: UILabel!
     
+    var yayasan: Yayasan!
     
     func setFoundation(foundation: Yayasan){
+        
+        self.yayasan = foundation
         titleFoundation.text = foundation.title
         descriptionFoundation.text = foundation.description
         thumbnailFoundation.image = foundation.photo
+//        placeFoundation.text = foundation.place
+        
     }
 
 }
