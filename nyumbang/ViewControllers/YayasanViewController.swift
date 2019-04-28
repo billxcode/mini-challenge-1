@@ -12,7 +12,6 @@ class YayasanViewController: UIViewController {
 
     
     @IBOutlet weak var listOfSearch: UITableView!
-    @IBOutlet weak var titleFoundation: UILabel!
     
     var yayasan: [Yayasan] = []
     

@@ -22,7 +22,7 @@ class YayasanCell: UITableViewCell {
         titleFoundation.text = foundation.title
         descriptionFoundation.text = foundation.description
         thumbnailFoundation.image = foundation.photo
-//        placeFoundation.text = foundation.place
+        placeFoundation.text = foundation.place
         
     }
 

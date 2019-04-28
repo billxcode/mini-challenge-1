@@ -26,7 +26,7 @@
 		B7CA0C9A2275497A000935E2 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C992275497A000935E2 /* EventCell.swift */; };
 		B7CA0C9C227549BE000935E2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C9B227549BE000935E2 /* Event.swift */; };
 		B7CA0C9E22754FA4000935E2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C9D22754FA4000935E2 /* EventViewController.swift */; };
-		B7DE8C5C2274389100AACCFA /* YayasanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE8C5B2274389100AACCFA /* YayasanViewController.swift */; };
+		B7CA0C9F22756332000935E2 /* YayasanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE8C5B2274389100AACCFA /* YayasanViewController.swift */; };
 		B7DE8C5E22747B4000AACCFA /* YayasanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE8C5D22747B4000AACCFA /* YayasanDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -222,8 +222,8 @@
 				B09317FB22731B1700F6DCC0 /* ImageSliderCollectionCell.swift in Sources */,
 				7FDA4F8A227331E4000C676A /* DonateDetailController.swift in Sources */,
 				7F2FA6452270C0E900381683 /* AppDelegate.swift in Sources */,
+				B7CA0C9F22756332000935E2 /* YayasanViewController.swift in Sources */,
 				B09317F92273197E00F6DCC0 /* EventController.swift in Sources */,
-				7F19DC872274BEB100E60BF1 /* DiscoveryDetailController.swift in Sources */,
 				B717610622730B19006F9C08 /* Yayasan.swift in Sources */,
 				7FDA4F8822733093000C676A /* OnGoingDonateTableViewCell.swift in Sources */,
 				7F19DC8322737B8800E60BF1 /* DonateHistoryController.swift in Sources */,

@@ -642,8 +642,8 @@ Tsunami Palu…</string>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="3bZ-wK-cil" id="vaZ-Kt-Wpu"/>
-                                    <outlet property="delegate" destination="3bZ-wK-cil" id="Rwu-GQ-BQu"/>
+                                    <outlet property="dataSource" destination="3bZ-wK-cil" id="qSb-xx-ASA"/>
+                                    <outlet property="delegate" destination="3bZ-wK-cil" id="FHJ-8L-sOX"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -666,7 +666,6 @@ Tsunami Palu…</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WKF-1f-hle" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="97n-SS-1fH">
                     <connections>
-                        <outlet property="delegate" destination="3bZ-wK-cil" id="fEk-8M-6TZ"/>
                         <outlet property="searchContentsController" destination="3bZ-wK-cil" id="NLh-fp-M8O"/>
                         <outlet property="searchResultsDataSource" destination="3bZ-wK-cil" id="IIU-ne-9ZB"/>
                         <outlet property="searchResultsDelegate" destination="3bZ-wK-cil" id="lpk-7d-02a"/>
