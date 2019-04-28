@@ -495,8 +495,11 @@ Tsunami Palu…</string>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="50" id="uBr-Zy-bOm"/>
                                                                     </constraints>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                     <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <state key="normal" title="Donate Now"/>
+                                                                    <state key="normal" title="Donate Now">
+                                                                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </state>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -528,6 +531,7 @@ Tsunami Palu…</string>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descriptionEvent" destination="aZZ-8t-a3Y" id="kdW-aZ-gcn"/>
+                                            <outlet property="donateButton" destination="o2b-VQ-Mpw" id="hbO-PN-UJa"/>
                                             <outlet property="placeEvent" destination="W2M-8f-6bi" id="hRm-j8-G3Q"/>
                                             <outlet property="thumbnailEvent" destination="hRP-X6-9GC" id="Cte-KL-aOh"/>
                                             <outlet property="timeRemainingEvent" destination="5N3-nL-yxd" id="v4A-Qf-TD7"/>
@@ -723,7 +727,7 @@ Tsunami Palu…</string>
                                         <rect key="frame" x="20" y="313" width="374" height="461"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventFoundationCell" rowHeight="245" id="YLa-t1-Av5">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventFoundationCell" rowHeight="245" id="YLa-t1-Av5" customClass="EventCell" customModule="nyumbang" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="374" height="245"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YLa-t1-Av5" id="vDg-Gu-3vR">
@@ -731,7 +735,7 @@ Tsunami Palu…</string>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtH-Ym-dhb">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="244.5"/>
+                                                            <rect key="frame" x="0.0" y="10" width="374" height="224.5"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="71ABEA25-AD0D-41DF-8C7A-ABDB0705AD2A" translatesAutoresizingMaskIntoConstraints="NO" id="DrM-fQ-zjK">
                                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -741,7 +745,7 @@ Tsunami Palu…</string>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tR4-t8-iQZ">
-                                                                    <rect key="frame" x="110" y="0.0" width="264" height="89.5"/>
+                                                                    <rect key="frame" x="110" y="10" width="264" height="89.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galang Dana Tsunami" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUt-A3-0lr">
                                                                             <rect key="frame" x="0.0" y="0.0" width="264" height="19.5"/>
@@ -765,7 +769,7 @@ Tsunami Palu…</string>
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="DYk-eo-kdG">
-                                                                    <rect key="frame" x="0.0" y="110" width="374" height="134.5"/>
+                                                                    <rect key="frame" x="0.0" y="110" width="374" height="104.5"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Rt9-08-gGW">
                                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="16"/>
@@ -803,19 +807,22 @@ Tsunami Palu…</string>
                                                                             </subviews>
                                                                         </stackView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sisa hari 250" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PG-Ts-gdx">
-                                                                            <rect key="frame" x="0.0" y="42" width="374" height="17"/>
+                                                                            <rect key="frame" x="0.0" y="27" width="374" height="17"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89T-9R-3id">
-                                                                            <rect key="frame" x="0.0" y="84.5" width="374" height="50"/>
+                                                                            <rect key="frame" x="0.0" y="54.5" width="374" height="50"/>
                                                                             <color key="backgroundColor" red="0.22352941176470587" green="0.70588235294117641" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="50" id="lyf-2X-PRY"/>
                                                                             </constraints>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                             <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                            <state key="normal" title="Donate Now"/>
+                                                                            <state key="normal" title="Donate Now">
+                                                                                <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </state>
                                                                         </button>
                                                                     </subviews>
                                                                 </stackView>
@@ -827,22 +834,34 @@ Tsunami Palu…</string>
                                                                 <constraint firstAttribute="trailing" secondItem="DYk-eo-kdG" secondAttribute="trailing" id="Qcd-V9-DYX"/>
                                                                 <constraint firstItem="DYk-eo-kdG" firstAttribute="leading" secondItem="DrM-fQ-zjK" secondAttribute="leading" id="aIR-Oa-5YB"/>
                                                                 <constraint firstAttribute="trailing" secondItem="tR4-t8-iQZ" secondAttribute="trailing" id="rEs-tF-izv"/>
-                                                                <constraint firstAttribute="bottom" secondItem="DYk-eo-kdG" secondAttribute="bottom" id="uWs-lq-KQy"/>
+                                                                <constraint firstAttribute="bottom" secondItem="DYk-eo-kdG" secondAttribute="bottom" constant="10" id="uWs-lq-KQy"/>
                                                                 <constraint firstItem="DrM-fQ-zjK" firstAttribute="top" secondItem="AtH-Ym-dhb" secondAttribute="top" id="urN-Pb-Syy"/>
                                                                 <constraint firstItem="DYk-eo-kdG" firstAttribute="top" secondItem="DrM-fQ-zjK" secondAttribute="bottom" constant="10" id="wP7-iM-c2H"/>
-                                                                <constraint firstItem="tR4-t8-iQZ" firstAttribute="top" secondItem="AtH-Ym-dhb" secondAttribute="top" id="wdr-K1-VaX"/>
+                                                                <constraint firstItem="tR4-t8-iQZ" firstAttribute="top" secondItem="AtH-Ym-dhb" secondAttribute="top" constant="10" id="wdr-K1-VaX"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="AtH-Ym-dhb" secondAttribute="trailing" id="0AB-cM-Htm"/>
-                                                        <constraint firstAttribute="bottom" secondItem="AtH-Ym-dhb" secondAttribute="bottom" id="4Pe-Jn-49Z"/>
+                                                        <constraint firstAttribute="bottom" secondItem="AtH-Ym-dhb" secondAttribute="bottom" constant="10" id="4Pe-Jn-49Z"/>
                                                         <constraint firstItem="AtH-Ym-dhb" firstAttribute="leading" secondItem="vDg-Gu-3vR" secondAttribute="leading" id="pRR-by-g14"/>
-                                                        <constraint firstItem="AtH-Ym-dhb" firstAttribute="top" secondItem="vDg-Gu-3vR" secondAttribute="top" id="zOv-pZ-R5c"/>
+                                                        <constraint firstItem="AtH-Ym-dhb" firstAttribute="top" secondItem="vDg-Gu-3vR" secondAttribute="top" constant="10" id="zOv-pZ-R5c"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="descriptionEvent" destination="qA1-aP-J7s" id="svh-pH-f0u"/>
+                                                    <outlet property="donateButton" destination="89T-9R-3id" id="gJP-X5-brd"/>
+                                                    <outlet property="placeEvent" destination="GNa-5P-sUK" id="Kgb-Mw-tJk"/>
+                                                    <outlet property="thumbnailEvent" destination="DrM-fQ-zjK" id="OdF-b9-3v3"/>
+                                                    <outlet property="timeRemainingEvent" destination="0PG-Ts-gdx" id="cTl-hk-5Mo"/>
+                                                    <outlet property="titleEvent" destination="yUt-A3-0lr" id="4ta-1e-UHA"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="GCt-gW-7Eh" id="yzU-ia-hwz"/>
+                                            <outlet property="delegate" destination="GCt-gW-7Eh" id="dde-mk-O8D"/>
+                                        </connections>
                                     </tableView>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="H0Y-P4-dIe">
                                         <rect key="frame" x="135.5" y="265" width="143" height="29"/>
@@ -888,7 +907,7 @@ Tsunami Palu…</string>
                     </view>
                     <connections>
                         <outlet property="bannerFoundation" destination="TEq-RD-6k6" id="yO6-9t-P36"/>
-                        <outlet property="listEventFoundation" destination="DGe-iy-Ztg" id="5BX-kZ-9Ks"/>
+                        <outlet property="listEventTable" destination="DGe-iy-Ztg" id="vxW-HH-xVh"/>
                         <outlet property="photoFoundation" destination="zjm-B6-CYn" id="pgu-em-pEn"/>
                         <outlet property="placeFoundation" destination="XvV-cp-Ec1" id="tG3-c9-wFy"/>
                         <outlet property="titleFoundation" destination="cqi-YX-Ld0" id="hZ9-3B-MYK"/>
