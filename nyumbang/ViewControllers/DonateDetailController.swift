@@ -29,5 +29,13 @@ class DonateDetailController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = "Details"
+        navigationItem.backBarButtonItem = backItem
+        
+    }
+    
 
 }
