@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="EK5-v7-iyA" kind="relationship" relationship="viewControllers" id="jN4-0f-IiD"/>
+                        <segue destination="pZI-Wo-Uif" kind="relationship" relationship="viewControllers" id="jN4-0f-IiD"/>
                         <segue destination="GGw-yf-mjf" kind="relationship" relationship="viewControllers" id="qE8-7v-MJk"/>
                         <segue destination="CY4-kk-qUU" kind="relationship" relationship="viewControllers" id="Jtt-MK-8AZ"/>
                         <segue destination="jnZ-Xs-cmI" kind="relationship" relationship="viewControllers" id="UoR-27-AvL"/>
@@ -30,62 +30,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCW-S9-nTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-148" y="-121"/>
-        </scene>
-        <!--Home View Controller-->
-        <scene sceneID="n3F-dg-Ajx">
-            <objects>
-                <viewController id="9Pg-MQ-bcW" userLabel="Home View Controller" customClass="EventController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RZS-Vm-uSg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="udT-W4-odr">
-                                <rect key="frame" x="0.0" y="88" width="414" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewLayout key="collectionViewLayout" id="Lvz-vl-vKr"/>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="wAC-Gg-rCf" customClass="ImageSliderCollectionCell" customModule="nyumbang" customModuleProvider="target">
-                                        <rect key="frame" x="3.5" y="0.0" width="407" height="255"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="407" height="255"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ysq-Kh-6nA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="407" height="255"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <size key="customSize" width="407" height="255"/>
-                                        <connections>
-                                            <outlet property="img" destination="ysq-Kh-6nA" id="3qB-ve-ubm"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="9Pg-MQ-bcW" id="hfW-t7-Opq"/>
-                                    <outlet property="delegate" destination="9Pg-MQ-bcW" id="DD9-iw-fx3"/>
-                                </connections>
-                            </collectionView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fhN-9X-TRP">
-                                <rect key="frame" x="20" y="296" width="374" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="E75-7k-mcj"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Today's Event" id="2cu-Ec-v6x"/>
-                    <connections>
-                        <outlet property="imageSlider" destination="udT-W4-odr" id="iSI-O5-jde"/>
-                        <outlet property="pageControlImage" destination="fhN-9X-TRP" id="iWt-89-xKj"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6EZ-fe-78B" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1168.1159420289855" y="845.75892857142856"/>
         </scene>
         <!--Discover-->
         <scene sceneID="IpC-uO-tRP">
@@ -140,22 +84,13 @@
             </objects>
             <point key="canvasLocation" x="3984.057971014493" y="845.75892857142856"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="5dQ-bv-BQr">
+        <!--Event-->
+        <scene sceneID="jWv-v5-tGy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EK5-v7-iyA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="KpZ-Sw-VTh"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ra4-0u-AlU">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9Pg-MQ-bcW" kind="relationship" relationship="rootViewController" id="4wv-Ks-ukG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="08B-Xx-CwD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Event" id="pZI-Wo-Uif" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="cA5-Vi-La1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOK-7T-7uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2078.2608695652175" y="845.75892857142856"/>
         </scene>
