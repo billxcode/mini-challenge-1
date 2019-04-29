@@ -31,14 +31,18 @@
 		B0B95FCE2275B13D00C6DE58 /* EventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B95FCD2275B13D00C6DE58 /* EventDetailController.swift */; };
 		B0B95FD22275E4CE00C6DE58 /* EventDetailCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B95FD12275E4CE00C6DE58 /* EventDetailCollectionCell.swift */; };
 		B0CFE0632276B129007506F8 /* EventDetailCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CFE0622276B129007506F8 /* EventDetailCategoryCell.swift */; };
+		B0CFE06B2276CF19007506F8 /* ChooseItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CFE06A2276CF19007506F8 /* ChooseItemCell.swift */; };
+		B0CFE06D2276E2A5007506F8 /* StepperValueChooseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CFE06C2276E2A5007506F8 /* StepperValueChooseItem.swift */; };
+		B0CFE0A9227725F9007506F8 /* DonationProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CFE0A8227725F9007506F8 /* DonationProcess.swift */; };
+		B0CFE0AB22773A46007506F8 /* methodDeliveryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CFE0AA22773A46007506F8 /* methodDeliveryCollectionCell.swift */; };
 		B0E9033B22734CF500989A84 /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E9033922734CF500989A84 /* Event.storyboard */; };
 		B71761042273097C006F9C08 /* YayasanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71761032273097C006F9C08 /* YayasanCell.swift */; };
 		B717610622730B19006F9C08 /* Yayasan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717610522730B19006F9C08 /* Yayasan.swift */; };
 		B7CA0C9A2275497A000935E2 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C992275497A000935E2 /* EventCell.swift */; };
 		B7CA0C9C227549BE000935E2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C9B227549BE000935E2 /* Event.swift */; };
 		B7CA0C9E22754FA4000935E2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C9D22754FA4000935E2 /* EventViewController.swift */; };
-		B7CA0C9F22756332000935E2 /* YayasanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE8C5B2274389100AACCFA /* YayasanViewController.swift */; };
-		B7CA0CA222756A61000935E2 /* YayasanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE8C5D22747B4000AACCFA /* YayasanDetailViewController.swift */; };
+		B7CA0C9F22756332000935E2 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		B7CA0CA222756A61000935E2 /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +73,10 @@
 		B0B95FCD2275B13D00C6DE58 /* EventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailController.swift; sourceTree = "<group>"; };
 		B0B95FD12275E4CE00C6DE58 /* EventDetailCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailCollectionCell.swift; sourceTree = "<group>"; };
 		B0CFE0622276B129007506F8 /* EventDetailCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailCategoryCell.swift; sourceTree = "<group>"; };
+		B0CFE06A2276CF19007506F8 /* ChooseItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseItemCell.swift; sourceTree = "<group>"; };
+		B0CFE06C2276E2A5007506F8 /* StepperValueChooseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperValueChooseItem.swift; sourceTree = "<group>"; };
+		B0CFE0A8227725F9007506F8 /* DonationProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DonationProcess.swift; path = ../DonationProcess.swift; sourceTree = "<group>"; };
+		B0CFE0AA22773A46007506F8 /* methodDeliveryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = methodDeliveryCollectionCell.swift; sourceTree = "<group>"; };
 		B0E9033A22734CF500989A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = nyumbang/Base.lproj/Event.storyboard; sourceTree = "<group>"; };
 		B71761032273097C006F9C08 /* YayasanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayasanCell.swift; sourceTree = "<group>"; };
 		B717610522730B19006F9C08 /* Yayasan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yayasan.swift; sourceTree = "<group>"; };
@@ -111,7 +119,11 @@
 				7F2FA6582270CF6D00381683 /* ViewControllers */,
 				7F2FA6442270C0E900381683 /* AppDelegate.swift */,
 				B0E9033922734CF500989A84 /* Event.storyboard */,
+				B0CFE0A8227725F9007506F8 /* DonationProcess.swift */,
 				7F2FA6482270C0E900381683 /* Main.storyboard */,
+				B0CFE0AA22773A46007506F8 /* methodDeliveryCollectionCell.swift */,
+				B0CFE06C2276E2A5007506F8 /* StepperValueChooseItem.swift */,
+				B0CFE06A2276CF19007506F8 /* ChooseItemCell.swift */,
 				B0CFE0622276B129007506F8 /* EventDetailCategoryCell.swift */,
 				B0B95FD12275E4CE00C6DE58 /* EventDetailCollectionCell.swift */,
 				B0B95FCD2275B13D00C6DE58 /* EventDetailController.swift */,
@@ -243,14 +255,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F2FA65A2270CFB400381683 /* DiscoverController.swift in Sources */,
+				B0CFE0AB22773A46007506F8 /* methodDeliveryCollectionCell.swift in Sources */,
 				7F2FA65E2270E11700381683 /* DonateController.swift in Sources */,
-				B7DE8C5E22747B4000AACCFA /* YayasanDetailViewController.swift in Sources */,
+				B0CFE06D2276E2A5007506F8 /* StepperValueChooseItem.swift in Sources */,
+				B0CFE06B2276CF19007506F8 /* ChooseItemCell.swift in Sources */,
 				7F19DC912275809A00E60BF1 /* EventReportController.swift in Sources */,
 				B7CA0C9C227549BE000935E2 /* Event.swift in Sources */,
 				B7CA0C9E22754FA4000935E2 /* EventViewController.swift in Sources */,
+				B0CFE0A9227725F9007506F8 /* DonationProcess.swift in Sources */,
 				7F47085422723CCB002B51BC /* Donation.swift in Sources */,
 				B0CFE0632276B129007506F8 /* EventDetailCategoryCell.swift in Sources */,
-				B7CA0CA222756A61000935E2 /* YayasanDetailViewController.swift in Sources */,
+				B7CA0CA222756A61000935E2 /* (null) in Sources */,
 				B71761042273097C006F9C08 /* YayasanCell.swift in Sources */,
 				B7CA0C9A2275497A000935E2 /* EventCell.swift in Sources */,
 				B09317FB22731B1700F6DCC0 /* ImageSliderCollectionCell.swift in Sources */,
@@ -259,7 +274,7 @@
 				7F2FA6452270C0E900381683 /* AppDelegate.swift in Sources */,
 				B0B95FD22275E4CE00C6DE58 /* EventDetailCollectionCell.swift in Sources */,
 				B07DF1842273417900244C75 /* MostUrgentCollectionCell.swift in Sources */,
-				B7CA0C9F22756332000935E2 /* YayasanViewController.swift in Sources */,
+				B7CA0C9F22756332000935E2 /* (null) in Sources */,
 				7F19DC9522758C5F00E60BF1 /* SlidersView.swift in Sources */,
 				B09317F92273197E00F6DCC0 /* EventController.swift in Sources */,
 				B717610622730B19006F9C08 /* Yayasan.swift in Sources */,
