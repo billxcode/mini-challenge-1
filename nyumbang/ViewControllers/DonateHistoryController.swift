@@ -24,7 +24,7 @@ class DonateHistoryController: UIViewController {
     func createDonationHistory() -> [Donation] {
         
         let donation1: Donation = Donation.init(name: "Donation 1", reaming: "", status: "Arived", date: "2 April, 2:16 PM")
-        let donation2: Donation = Donation.init(name: "Donation 2", reaming: "", status: "Canceld", date: "2 April, 2:16 PM")
+        let donation2: Donation = Donation.init(name: "Donation 2", reaming: "", status: "Canceled", date: "2 April, 2:16 PM")
         let donation3: Donation = Donation.init(name: "Donation 3", reaming: "", status: "Arived", date: "2 April, 2:16 PM")
         
         return [donation1, donation2, donation3]
@@ -43,7 +43,7 @@ extension DonateHistoryController: UITableViewDelegate, UITableViewDataSource {
         
         let donationHistoryRow = donationHistory[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "donateHistory") as! OnGoingDonateTableViewCell
-        cell.setDonation(donation: donationHistoryRow)
+        cell.setDonationHistory(donation: donationHistoryRow)
         return cell
 
         
