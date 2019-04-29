@@ -19,6 +19,8 @@
 		7F2FA65A2270CFB400381683 /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2FA6592270CFB400381683 /* DiscoverController.swift */; };
 		7F2FA65C2270DE7500381683 /* Donate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2FA65B2270DE7500381683 /* Donate.storyboard */; };
 		7F2FA65E2270E11700381683 /* DonateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2FA65D2270E11700381683 /* DonateController.swift */; };
+		7F3E9EEA2276B4560028E8E0 /* ItemDonationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E9EE92276B4560028E8E0 /* ItemDonationCell.swift */; };
+		7F3E9EEC2276CEFF0028E8E0 /* DonationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3E9EEB2276CEFF0028E8E0 /* DonationItem.swift */; };
 		7F47085422723CCB002B51BC /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F47085322723CCB002B51BC /* Donation.swift */; };
 		7FDA4F8822733093000C676A /* OnGoingDonateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4708512272304F002B51BC /* OnGoingDonateTableViewCell.swift */; };
 		7FDA4F8A227331E4000C676A /* DonateDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA4F89227331E4000C676A /* DonateDetailController.swift */; };
@@ -49,6 +51,8 @@
 		7F2FA6592270CFB400381683 /* DiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
 		7F2FA65B2270DE7500381683 /* Donate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Donate.storyboard; sourceTree = "<group>"; };
 		7F2FA65D2270E11700381683 /* DonateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateController.swift; sourceTree = "<group>"; };
+		7F3E9EE92276B4560028E8E0 /* ItemDonationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDonationCell.swift; sourceTree = "<group>"; };
+		7F3E9EEB2276CEFF0028E8E0 /* DonationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItem.swift; sourceTree = "<group>"; };
 		7F4708512272304F002B51BC /* OnGoingDonateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGoingDonateTableViewCell.swift; sourceTree = "<group>"; };
 		7F47085322723CCB002B51BC /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
 		7FDA4F89227331E4000C676A /* DonateDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateDetailController.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				B717610522730B19006F9C08 /* Yayasan.swift */,
 				7F47085322723CCB002B51BC /* Donation.swift */,
 				B7CA0C9B227549BE000935E2 /* Event.swift */,
+				7F3E9EEB2276CEFF0028E8E0 /* DonationItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				7F4708512272304F002B51BC /* OnGoingDonateTableViewCell.swift */,
 				7F19DC9222758C3000E60BF1 /* Slide.xib */,
 				7F19DC9422758C5F00E60BF1 /* SlidersView.swift */,
+				7F3E9EE92276B4560028E8E0 /* ItemDonationCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -225,10 +231,12 @@
 				7F2FA65E2270E11700381683 /* DonateController.swift in Sources */,
 				B7DE8C5E22747B4000AACCFA /* YayasanDetailViewController.swift in Sources */,
 				7F19DC912275809A00E60BF1 /* EventReportController.swift in Sources */,
+				7F3E9EEC2276CEFF0028E8E0 /* DonationItem.swift in Sources */,
 				B7CA0C9C227549BE000935E2 /* Event.swift in Sources */,
 				B7CA0C9E22754FA4000935E2 /* EventViewController.swift in Sources */,
 				7F47085422723CCB002B51BC /* Donation.swift in Sources */,
 				B71761042273097C006F9C08 /* YayasanCell.swift in Sources */,
+				7F3E9EEA2276B4560028E8E0 /* ItemDonationCell.swift in Sources */,
 				B7CA0C9A2275497A000935E2 /* EventCell.swift in Sources */,
 				B09317FB22731B1700F6DCC0 /* ImageSliderCollectionCell.swift in Sources */,
 				7FDA4F8A227331E4000C676A /* DonateDetailController.swift in Sources */,
@@ -385,7 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = UUHXR699G4;
 				INFOPLIST_FILE = nyumbang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,7 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C476YGMRCM;
+				DEVELOPMENT_TEAM = UUHXR699G4;
 				INFOPLIST_FILE = nyumbang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
