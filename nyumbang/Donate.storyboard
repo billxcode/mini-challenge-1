@@ -58,16 +58,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reaming" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-LK-ISU">
-                                                    <rect key="frame" x="341.5" y="39" width="52.5" height="24"/>
-                                                    <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="24" id="DhL-v3-W8P"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxq-vt-h1i">
                                                     <rect key="frame" x="20" y="72" width="72" height="15"/>
                                                     <constraints>
@@ -83,24 +73,31 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Reaming" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="66X-RH-Xb7">
+                                                    <rect key="frame" x="331.5" y="33" width="62.5" height="32"/>
+                                                    <color key="backgroundColor" red="0.22352941179999999" green="0.70588235290000001" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9ei-LK-ISU" firstAttribute="trailing" secondItem="2Zp-ZP-M4J" secondAttribute="trailingMargin" id="0bG-nf-Wca"/>
                                                 <constraint firstItem="1qe-BR-PxT" firstAttribute="top" secondItem="hxq-vt-h1i" secondAttribute="bottom" constant="30" id="9lt-PE-IjJ"/>
                                                 <constraint firstItem="hxq-vt-h1i" firstAttribute="top" secondItem="0fc-ej-AFM" secondAttribute="bottom" constant="5" id="9so-jX-K6m"/>
-                                                <constraint firstItem="9ei-LK-ISU" firstAttribute="top" secondItem="2Zp-ZP-M4J" secondAttribute="topMargin" constant="28" id="Eb3-PD-IxT"/>
                                                 <constraint firstItem="hxq-vt-h1i" firstAttribute="top" secondItem="0fc-ej-AFM" secondAttribute="bottom" constant="5" id="Qdt-JW-NVa"/>
                                                 <constraint firstItem="hxq-vt-h1i" firstAttribute="leading" secondItem="2Zp-ZP-M4J" secondAttribute="leadingMargin" id="TpN-NZ-9y3"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="1qe-BR-PxT" secondAttribute="bottom" constant="15" id="aTV-70-JYq"/>
                                                 <constraint firstItem="0fc-ej-AFM" firstAttribute="leading" secondItem="2Zp-ZP-M4J" secondAttribute="leadingMargin" id="c7D-sv-2Zs"/>
                                                 <constraint firstItem="0fc-ej-AFM" firstAttribute="top" secondItem="2Zp-ZP-M4J" secondAttribute="topMargin" constant="20" id="enY-8l-Wu3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="66X-RH-Xb7" secondAttribute="trailing" id="kkx-NR-JOe"/>
+                                                <constraint firstItem="66X-RH-Xb7" firstAttribute="top" secondItem="2Zp-ZP-M4J" secondAttribute="topMargin" constant="22" id="kvO-I9-RhE"/>
                                                 <constraint firstItem="1qe-BR-PxT" firstAttribute="leading" secondItem="hxq-vt-h1i" secondAttribute="leading" id="wdH-gn-MJf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="1qe-BR-PxT" id="3gx-Pn-u7c"/>
                                             <outlet property="eventNameLabel" destination="0fc-ej-AFM" id="yu2-YU-cM4"/>
-                                            <outlet property="reamingLabel" destination="9ei-LK-ISU" id="m2U-72-pE3"/>
+                                            <outlet property="reamingLabel" destination="66X-RH-Xb7" id="dvs-at-pLy"/>
                                             <outlet property="statusLabel" destination="hxq-vt-h1i" id="qFp-2O-mlb"/>
                                             <segue destination="Oj4-pw-8ab" kind="show" id="d5I-y2-06k"/>
                                         </connections>

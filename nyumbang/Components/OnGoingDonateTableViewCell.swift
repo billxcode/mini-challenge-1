@@ -11,10 +11,9 @@ import UIKit
 class OnGoingDonateTableViewCell: UITableViewCell {
 
     @IBOutlet weak var eventNameLabel: UILabel!
-    @IBOutlet weak var reamingLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    
+    @IBOutlet weak var reamingLabel: UITextView!
     var donation: Donation!
     
     func setDonation(donation: Donation) {
@@ -29,9 +28,10 @@ class OnGoingDonateTableViewCell: UITableViewCell {
         
     }
     
-    func setReamingLabel(_ reaming: String) -> UILabel {
+    func setReamingLabel(_ reaming: String) -> UITextView {
         
         reamingLabel.text = reaming
+        reamingLabel.textContainerInset = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
         reamingLabel.layer.masksToBounds = true
         reamingLabel.layer.cornerRadius = 15
         
