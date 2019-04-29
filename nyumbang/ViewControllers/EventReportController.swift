@@ -17,18 +17,11 @@ class EventReportController: UIViewController, UIScrollViewDelegate {
             eventSlider.delegate = self
         }
     }
-//    @IBOutlet weak var reportScrollView: UIScrollView!{
-//        didSet{
-//            reportScrollView.delegate = self
-//        }
-//    }
     
     @IBOutlet weak var eventSliderPageControll: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        setupScrollView()
         
         slides = createSlides()
         setuopSlider(slides: slides)
@@ -38,17 +31,7 @@ class EventReportController: UIViewController, UIScrollViewDelegate {
         eventSliderPageControll.currentPage = 0
         view.bringSubviewToFront(eventSliderPageControll)
 
-        // Do any additional setup after loading the view.
     }
-    
-//    func setupScrollView() {
-//        
-//        reportScrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
-//        reportScrollView.contentSize = CGSize(width: view.frame.width, height: CGFloat(integerLiteral: 2000))
-//        
-//        
-//        
-//    }
     
     func createSlides() -> [SlidersView] {
         
@@ -56,7 +39,7 @@ class EventReportController: UIViewController, UIScrollViewDelegate {
         slide1.slideImg.image = UIImage(named: "71ABEA25-AD0D-41DF-8C7A-ABDB0705AD2A")
         
         let slide2: SlidersView = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! SlidersView
-        slide2.slideImg.image = UIImage(named: "71ABEA25-AD0D-41DF-8C7A-ABDB0705AD2A")
+        slide2.slideImg.image = UIImage(named: "3A55B22D-564E-4EC1-9BFB-441674A83981")
         
         return [slide1, slide2]
 

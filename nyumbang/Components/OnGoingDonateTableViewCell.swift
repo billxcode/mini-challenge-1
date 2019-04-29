@@ -11,17 +11,16 @@ import UIKit
 class OnGoingDonateTableViewCell: UITableViewCell {
 
     @IBOutlet weak var eventNameLabel: UILabel!
-    @IBOutlet weak var reamingLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    
+    @IBOutlet weak var reamingLabel: UITextView!
     var donation: Donation!
     
     func setDonation(donation: Donation) {
         
         self.donation = donation
         eventNameLabel.text = donation.eventName
-        reamingLabel = setReamingLabel(donation.eventReaming)
+        reamingLabel = setReamingLabel(donation.eventReaming, false)
         statusLabel.text = donation.statusDonate
         dateLabel.text = donation.dateDonate
         
@@ -29,20 +28,30 @@ class OnGoingDonateTableViewCell: UITableViewCell {
         
     }
     
-    func setReamingLabel(_ reaming: String) -> UILabel {
+    func setDonationHistory(donation: Donation) {
+        eventNameLabel.text = donation.eventName
+        reamingLabel = setReamingLabel(donation.statusDonate, true)
+        dateLabel.text = donation.dateDonate
+        statusLabel.isHidden = true
+    }
+    
+    
+    func setReamingLabel(_ reaming: String, _ isHistory: Bool) -> UITextView {
         
         reamingLabel.text = reaming
+        
+        reamingLabel.textContainerInset = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
         reamingLabel.layer.masksToBounds = true
         reamingLabel.layer.cornerRadius = 15
         
-        if reaming == "Overdue" {
+        if reaming == "Canceled" || reaming == "Overdue" {
             reamingLabel.backgroundColor = #colorLiteral(red: 1, green: 0.231372549, blue: 0.1882352941, alpha: 1)
         }else if reaming == "2 Days Left" {
             reamingLabel.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.768627451, blue: 0.05882352941, alpha: 1)
         }else{
             reamingLabel.backgroundColor = #colorLiteral(red: 0.3921568627, green: 0.7529411765, blue: 0.01176470588, alpha: 1)
         }
-        
+
         
         return reamingLabel
         
