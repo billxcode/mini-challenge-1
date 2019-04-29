@@ -36,11 +36,14 @@
 		B0E9033B22734CF500989A84 /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E9033922734CF500989A84 /* Event.storyboard */; };
 		B71761042273097C006F9C08 /* YayasanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71761032273097C006F9C08 /* YayasanCell.swift */; };
 		B717610622730B19006F9C08 /* Yayasan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717610522730B19006F9C08 /* Yayasan.swift */; };
+		B7C6049D2276BB3200A10DFF /* YayasanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C6049B2276BB3200A10DFF /* YayasanDetailViewController.swift */; };
+		B7C6049E2276BB3200A10DFF /* YayasanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C6049C2276BB3200A10DFF /* YayasanViewController.swift */; };
+		B7C604A02276EF4700A10DFF /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C6049F2276EF4700A10DFF /* EventDetailViewController.swift */; };
 		B7CA0C9A2275497A000935E2 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C992275497A000935E2 /* EventCell.swift */; };
 		B7CA0C9C227549BE000935E2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C9B227549BE000935E2 /* Event.swift */; };
 		B7CA0C9E22754FA4000935E2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C9D22754FA4000935E2 /* EventViewController.swift */; };
-		B7CA0C9F22756332000935E2 /* YayasanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE8C5B2274389100AACCFA /* YayasanViewController.swift */; };
-		B7CA0CA222756A61000935E2 /* YayasanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE8C5D22747B4000AACCFA /* YayasanDetailViewController.swift */; };
+		B7CA0C9F22756332000935E2 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		B7CA0CA222756A61000935E2 /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		B0E9033A22734CF500989A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = nyumbang/Base.lproj/Event.storyboard; sourceTree = "<group>"; };
 		B71761032273097C006F9C08 /* YayasanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayasanCell.swift; sourceTree = "<group>"; };
 		B717610522730B19006F9C08 /* Yayasan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yayasan.swift; sourceTree = "<group>"; };
+		B7C6049B2276BB3200A10DFF /* YayasanDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YayasanDetailViewController.swift; sourceTree = "<group>"; };
+		B7C6049C2276BB3200A10DFF /* YayasanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YayasanViewController.swift; sourceTree = "<group>"; };
+		B7C6049F2276EF4700A10DFF /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		B7CA0C992275497A000935E2 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		B7CA0C9B227549BE000935E2 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B7CA0C9D22754FA4000935E2 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
@@ -138,13 +144,16 @@
 		7F2FA6582270CF6D00381683 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7F19DC862274BEB100E60BF1 /* DiscoveryDetailController.swift */,
+				B7C6049B2276BB3200A10DFF /* YayasanDetailViewController.swift */,
+				B7C6049C2276BB3200A10DFF /* YayasanViewController.swift */,
 				7F2FA6592270CFB400381683 /* DiscoverController.swift */,
+				7F19DC862274BEB100E60BF1 /* DiscoveryDetailController.swift */,
 				7F2FA65D2270E11700381683 /* DonateController.swift */,
 				7FDA4F89227331E4000C676A /* DonateDetailController.swift */,
 				7F19DC8222737B8800E60BF1 /* DonateHistoryController.swift */,
-				B7CA0C9D22754FA4000935E2 /* EventViewController.swift */,
 				7F19DC902275809A00E60BF1 /* EventReportController.swift */,
+				B7CA0C9D22754FA4000935E2 /* EventViewController.swift */,
+				B7C6049F2276EF4700A10DFF /* EventDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -250,14 +259,14 @@
 			files = (
 				7F2FA65A2270CFB400381683 /* DiscoverController.swift in Sources */,
 				7F2FA65E2270E11700381683 /* DonateController.swift in Sources */,
-				B7DE8C5E22747B4000AACCFA /* YayasanDetailViewController.swift in Sources */,
 				7F19DC912275809A00E60BF1 /* EventReportController.swift in Sources */,
 				7F3E9EEC2276CEFF0028E8E0 /* DonationItem.swift in Sources */,
 				B7CA0C9C227549BE000935E2 /* Event.swift in Sources */,
 				B7CA0C9E22754FA4000935E2 /* EventViewController.swift in Sources */,
 				7F47085422723CCB002B51BC /* Donation.swift in Sources */,
+				B7C6049D2276BB3200A10DFF /* YayasanDetailViewController.swift in Sources */,
 				B0CFE0632276B129007506F8 /* EventDetailCategoryCell.swift in Sources */,
-				B7CA0CA222756A61000935E2 /* YayasanDetailViewController.swift in Sources */,
+				B7CA0CA222756A61000935E2 /* (null) in Sources */,
 				B71761042273097C006F9C08 /* YayasanCell.swift in Sources */,
 				7F3E9EEA2276B4560028E8E0 /* ItemDonationCell.swift in Sources */,
 				B7CA0C9A2275497A000935E2 /* EventCell.swift in Sources */,
@@ -265,9 +274,10 @@
 				7FDA4F8A227331E4000C676A /* DonateDetailController.swift in Sources */,
 				B07DF186227343CE00244C75 /* CategoryCollectionCell.swift in Sources */,
 				7F2FA6452270C0E900381683 /* AppDelegate.swift in Sources */,
+				B7C6049E2276BB3200A10DFF /* YayasanViewController.swift in Sources */,
 				B0B95FD22275E4CE00C6DE58 /* EventDetailCollectionCell.swift in Sources */,
 				B07DF1842273417900244C75 /* MostUrgentCollectionCell.swift in Sources */,
-				B7CA0C9F22756332000935E2 /* YayasanViewController.swift in Sources */,
+				B7CA0C9F22756332000935E2 /* (null) in Sources */,
 				7F19DC9522758C5F00E60BF1 /* SlidersView.swift in Sources */,
 				B09317F92273197E00F6DCC0 /* EventController.swift in Sources */,
 				B717610622730B19006F9C08 /* Yayasan.swift in Sources */,
@@ -275,6 +285,7 @@
 				B0B95FCE2275B13D00C6DE58 /* EventDetailController.swift in Sources */,
 				B0B95FCA22758E5E00C6DE58 /* MostUrgentViewController.swift in Sources */,
 				B0B95FC822758D4D00C6DE58 /* CategoryViewController.swift in Sources */,
+				B7C604A02276EF4700A10DFF /* EventDetailViewController.swift in Sources */,
 				7F19DC8322737B8800E60BF1 /* DonateHistoryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

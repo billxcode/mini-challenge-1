@@ -14,9 +14,7 @@ class YayasanDetailViewController: UIViewController {
     @IBOutlet weak var photoFoundation: UIImageView!
     @IBOutlet weak var bannerFoundation: UIImageView!
     @IBOutlet weak var listEventTable: UITableView!
-//    @IBOutlet weak var listEventHistoryTable: UITableView!
     @IBOutlet weak var listEventView: UIView!
-    @IBOutlet weak var listEventHistoryView: UIView!
     
     var yayasan: Yayasan!
     var listEvent: [Event] = []
@@ -28,9 +26,6 @@ class YayasanDetailViewController: UIViewController {
         super.viewDidLoad()
         listEvent = createEventArray()
         
-        listEventView.isHidden = false
-        listEventHistoryView.isHidden = true
-        
         titleFoundation.text = yayasan?.title
         photoFoundation.image = yayasan?.photo
         bannerFoundation.image = yayasan?.photo
@@ -40,11 +35,9 @@ class YayasanDetailViewController: UIViewController {
     }
     @IBAction func tabEventFoundation(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex==0 {
-            listEventView.isHidden = false
-            listEventHistoryView.isHidden = true
+            tabToggle = true
         }else{
-            listEventView.isHidden = true
-            listEventHistoryView.isHidden = false
+            tabToggle = false
         }
         listEventTable.reloadData()
 //        listEventHistoryTable.reloadData()
@@ -96,6 +89,15 @@ extension YayasanDetailViewController: UITableViewDataSource, UITableViewDelegat
         
         cell.setEvent(event: yayasanKita)
         
+        if tabToggle {
+            cell.donateButton.isHidden = false
+            self.listEventTable.rowHeight = 245
+        }else{
+            cell.donateButton.isHidden = true
+            self.listEventTable.rowHeight = 185
+            cell.timeRemainingEvent.text = "Event ended"
+        }
+        
         return cell
     }
 
@@ -110,5 +112,6 @@ extension YayasanDetailViewController: UITableViewDataSource, UITableViewDelegat
 //    }
     
 }
+
 
 
