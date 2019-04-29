@@ -15,6 +15,12 @@ class DonateDetailController: UIViewController {
     @IBOutlet weak var eventNameLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var openReportBtn: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    func configure(with arr: [String]) {
+        self.collectionView.reloadData()
+        self.collectionView.layoutIfNeeded()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
