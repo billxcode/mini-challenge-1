@@ -11,13 +11,14 @@ import UIKit
 class EventController: UIViewController {
 
     @IBOutlet weak var imageSlider: UICollectionView!
-    @IBOutlet weak var mostUrgentCollection: UICollectionView!
-    @IBOutlet weak var categoryCollection: UICollectionView!
     
-    
+    @IBOutlet weak var categorySlider: UICollectionView!
+    @IBOutlet weak var mostUrgentSlider: UICollectionView!
     @IBOutlet weak var pageControlImage: UIPageControl!
     var imageArr = ["palu","buku","pangan"]
     var mostLabel = ["asdadasdsadasd","wkwkwkwk","okoookokokok"]
+    
+    var categoryLabel = ["Clothes","Stationary"]
     
     
     
@@ -38,11 +39,11 @@ class EventController: UIViewController {
         imageSlider.dataSource = self
         imageSlider.delegate = self
         
-        mostUrgentCollection.dataSource = self
-        mostUrgentCollection.delegate = self
-
-        categoryCollection.dataSource = self
-        categoryCollection.delegate = self
+        mostUrgentSlider.dataSource = self
+        mostUrgentSlider.delegate = self
+        
+        categorySlider.dataSource = self
+        categorySlider.delegate = self
         
     }
     
@@ -81,38 +82,44 @@ extension EventController: UICollectionViewDataSource, UICollectionViewDelegate 
         var counterPath = 0
         if (collectionView == self.imageSlider){
            counterPath = imageArr.count
-        }else if (collectionView == self.mostUrgentCollection){
+        }else if collectionView == self.mostUrgentSlider {
             counterPath = mostLabel.count
-        }else if (collectionView == self.categoryCollection){
-            //ganti logo nanti
-            counterPath = imageArr.count
+        }else if collectionView == self.categorySlider {
+            counterPath = categoryLabel.count
         }
         return counterPath
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if (collectionView == self.imageSlider){
+        
+        if collectionView == self.imageSlider {
             let cell = imageSlider.dequeueReusableCell(withReuseIdentifier: "cellTop", for: indexPath) as! ImageSliderCollectionCell
             cell.img.image = UIImage(named: imageArr[indexPath.row])
             return cell
-        }else if (collectionView == self.mostUrgentCollection){
-            let cell = imageSlider.dequeueReusableCell(withReuseIdentifier: "mostCell", for: indexPath) as! MostUrgentCollectionCell
-            cell.mostImage.layer.borderWidth = 1
-            cell.mostImage.layer.masksToBounds = false
-            cell.mostImage.layer.cornerRadius = 10
-            cell.mostImage.clipsToBounds = true
-
-            cell.mostImage.image = UIImage(named: imageArr[indexPath.row])
-            cell.mostTitle.text = mostLabel[indexPath.row]
-
-            return cell
-        }else{
-            //ganti logo nanti
-            let cell = imageSlider.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CategoryCollectionCell
+        }else if collectionView == self.mostUrgentSlider {
+            let mostCell = mostUrgentSlider.dequeueReusableCell(withReuseIdentifier: "mostCell", for: indexPath) as! MostUrgentCollectionCell
             
-            cell.categoryImage.image = UIImage(named:imageArr[indexPath.row])
-            return cell
+            mostCell.mostImage.image = UIImage(named: imageArr[indexPath.row])
+            mostCell.mostTitle.text = mostLabel[indexPath.row]
+            mostCell.mostImage.layer.cornerRadius = 3
+            
+            return mostCell
+        }else {
+            let categoryCell = categorySlider.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CategoryCollectionCell
+            categoryCell.categoryImage.image = UIImage(named: imageArr[indexPath.row])
+            
+           categoryCell.categoryImage.layer.masksToBounds = false
+            categoryCell.categoryImage.layer.cornerRadius = categoryCell.categoryImage.frame.height/2
+            
+            categoryCell.categoryImage.clipsToBounds = true
+            
+                categoryCell.categoryLbl.text = categoryLabel[indexPath.row]
+            
+            return categoryCell
         }
+        
+       
+        
         
     }
     
@@ -120,19 +127,45 @@ extension EventController: UICollectionViewDataSource, UICollectionViewDelegate 
         return 1
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        if (collectionView == self.imageSlider){
-//
-//        }else if (collectionView == self.mostUrgentCollection){
-//
-//        }else if (collectionView == self.categoryCollection){
-//
-//        }
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if (collectionView == self.imageSlider){
+            let vc = storyboard?.instantiateViewController(withIdentifier: "eventDetail") as! EventDetailController
+            
+            vc.sourceData.eventTitleTxt = mostLabel[indexPath.row]
+            vc.sourceData.eventFoundationTxt = "ACT Foundation"
+            vc.sourceData.imageData = imageArr
+            vc.sourceData.addressTxt = "Jl Panjang Utara 4"
+            vc.sourceData.donationDetail = "aaaaaaaadasdsadsdasdadadasdasdadasdadsadasdasdadasdjsdoajdkamfakdmoadoawkdowkdoakdowakdokoakodaodkoawkdoawkdoakdowakdoawkdoakdoakdoawkdoakdoakdoakdoakdoawkdowkdowkdowkdowdkowdkowdkowkdowkdowkdowkdowdkowdkoadahfueiehgiejgoajdoakwdoawjdiowjgijaodjkioawhjfowfaiojdowjfiefjoakaowjfowfgjiaonfaiwnfowjfaiofaofjwaofmnwaiofnwofnwwofaiofjaifoafjoaf"
+            vc.sourceData.locationTxt = "Jakarta"
+            vc.sourceData.locationImageName = "Location"
+            
+            //vc.name = mostLabel[indexPath.row]
+            
+        
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if collectionView == self.mostUrgentSlider {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "eventDetail") as! EventDetailController
+            
+            vc.sourceData.eventTitleTxt = mostLabel[indexPath.row]
+            vc.sourceData.eventFoundationTxt = "ACT Foundation"
+            vc.sourceData.imageData = imageArr
+            vc.sourceData.addressTxt = "Jl Panjang Utara 4"
+            vc.sourceData.donationDetail = "aaaaaaaadasdsadsdasdadadasdasdadasdadsadasdasdadasdjsdoajdkamfakdmoadoawkdowkdoakdowakdokoakodaodkoawkdoawkdoakdowakdoawkdoakdoakdoawkdoakdoakdoakdoakdoawkdowkdowkdowkdowdkowdkowdkowkdowkdowkdowkdowdkowdkoadahfueiehgiejgoajdoakwdoawjdiowjgijaodjkioawhjfowfaiojdowjfiefjoakaowjfowfgjiaonfaiwnfowjfaiofaofjwaofmnwaiofnwofnwwofaiofjaifoafjoaf"
+            vc.sourceData.locationTxt = "Jakarta"
+            vc.sourceData.locationImageName = "Location"
+//            vc.name = mostLabel[indexPath.row]
+//            vc.imageName = imageArr[indexPath.row]
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else{
+            
+        }
+    }
 
     
     
 }
+
 
 //extension EventController: UICollectionViewDelegateFlowLayout{
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

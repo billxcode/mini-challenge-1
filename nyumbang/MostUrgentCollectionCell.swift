@@ -10,6 +10,7 @@ import UIKit
 
 class MostUrgentCollectionCell: UICollectionViewCell {
     
-    @IBOutlet weak var mostTitle: UILabel!
     @IBOutlet weak var mostImage: UIImageView!
+    
+    @IBOutlet weak var mostTitle: UILabel!
 }

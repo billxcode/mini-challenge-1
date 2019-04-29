@@ -21,17 +21,19 @@
 		7FDA4F8A227331E4000C676A /* DonateDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDA4F89227331E4000C676A /* DonateDetailController.swift */; };
 		B07DF1842273417900244C75 /* MostUrgentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF1832273417900244C75 /* MostUrgentCollectionCell.swift */; };
 		B07DF186227343CE00244C75 /* CategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF185227343CE00244C75 /* CategoryCollectionCell.swift */; };
-		B07DF1882273494700244C75 /* EventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF1872273494700244C75 /* EventDetailController.swift */; };
 		B09317F92273197E00F6DCC0 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09317F82273197E00F6DCC0 /* EventController.swift */; };
 		B09317FB22731B1700F6DCC0 /* ImageSliderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09317FA22731B1700F6DCC0 /* ImageSliderCollectionCell.swift */; };
+		B0B95FC822758D4D00C6DE58 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B95FC722758D4D00C6DE58 /* CategoryViewController.swift */; };
+		B0B95FCA22758E5E00C6DE58 /* MostUrgentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B95FC922758E5E00C6DE58 /* MostUrgentViewController.swift */; };
+		B0B95FCE2275B13D00C6DE58 /* EventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B95FCD2275B13D00C6DE58 /* EventDetailController.swift */; };
+		B0B95FD22275E4CE00C6DE58 /* EventDetailCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B95FD12275E4CE00C6DE58 /* EventDetailCollectionCell.swift */; };
+		B0CFE0632276B129007506F8 /* EventDetailCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CFE0622276B129007506F8 /* EventDetailCategoryCell.swift */; };
 		B0E9033B22734CF500989A84 /* Event.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0E9033922734CF500989A84 /* Event.storyboard */; };
 		B71761042273097C006F9C08 /* YayasanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71761032273097C006F9C08 /* YayasanCell.swift */; };
 		B717610622730B19006F9C08 /* Yayasan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B717610522730B19006F9C08 /* Yayasan.swift */; };
 		B7CA0C9A2275497A000935E2 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C992275497A000935E2 /* EventCell.swift */; };
 		B7CA0C9C227549BE000935E2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C9B227549BE000935E2 /* Event.swift */; };
 		B7CA0C9E22754FA4000935E2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C9D22754FA4000935E2 /* EventViewController.swift */; };
-		B7DE8C5C2274389100AACCFA /* YayasanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE8C5B2274389100AACCFA /* YayasanViewController.swift */; };
-		B7DE8C5E22747B4000AACCFA /* YayasanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE8C5D22747B4000AACCFA /* YayasanDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,17 +54,19 @@
 		7FDA4F89227331E4000C676A /* DonateDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateDetailController.swift; sourceTree = "<group>"; };
 		B07DF1832273417900244C75 /* MostUrgentCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostUrgentCollectionCell.swift; sourceTree = "<group>"; };
 		B07DF185227343CE00244C75 /* CategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionCell.swift; sourceTree = "<group>"; };
-		B07DF1872273494700244C75 /* EventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailController.swift; sourceTree = "<group>"; };
 		B09317F82273197E00F6DCC0 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		B09317FA22731B1700F6DCC0 /* ImageSliderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderCollectionCell.swift; sourceTree = "<group>"; };
+		B0B95FC722758D4D00C6DE58 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		B0B95FC922758E5E00C6DE58 /* MostUrgentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostUrgentViewController.swift; sourceTree = "<group>"; };
+		B0B95FCD2275B13D00C6DE58 /* EventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailController.swift; sourceTree = "<group>"; };
+		B0B95FD12275E4CE00C6DE58 /* EventDetailCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailCollectionCell.swift; sourceTree = "<group>"; };
+		B0CFE0622276B129007506F8 /* EventDetailCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailCategoryCell.swift; sourceTree = "<group>"; };
 		B0E9033A22734CF500989A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = nyumbang/Base.lproj/Event.storyboard; sourceTree = "<group>"; };
 		B71761032273097C006F9C08 /* YayasanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayasanCell.swift; sourceTree = "<group>"; };
 		B717610522730B19006F9C08 /* Yayasan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yayasan.swift; sourceTree = "<group>"; };
 		B7CA0C992275497A000935E2 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		B7CA0C9B227549BE000935E2 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B7CA0C9D22754FA4000935E2 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
-		B7DE8C5B2274389100AACCFA /* YayasanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayasanViewController.swift; sourceTree = "<group>"; };
-		B7DE8C5D22747B4000AACCFA /* YayasanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YayasanDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,11 @@
 				7F2FA6442270C0E900381683 /* AppDelegate.swift */,
 				B0E9033922734CF500989A84 /* Event.storyboard */,
 				7F2FA6482270C0E900381683 /* Main.storyboard */,
-				B07DF1872273494700244C75 /* EventDetailController.swift */,
+				B0CFE0622276B129007506F8 /* EventDetailCategoryCell.swift */,
+				B0B95FD12275E4CE00C6DE58 /* EventDetailCollectionCell.swift */,
+				B0B95FCD2275B13D00C6DE58 /* EventDetailController.swift */,
+				B0B95FC722758D4D00C6DE58 /* CategoryViewController.swift */,
+				B0B95FC922758E5E00C6DE58 /* MostUrgentViewController.swift */,
 				B07DF1832273417900244C75 /* MostUrgentCollectionCell.swift */,
 				B07DF185227343CE00244C75 /* CategoryCollectionCell.swift */,
 				B09317FA22731B1700F6DCC0 /* ImageSliderCollectionCell.swift */,
@@ -123,8 +131,6 @@
 				7F2FA65D2270E11700381683 /* DonateController.swift */,
 				7FDA4F89227331E4000C676A /* DonateDetailController.swift */,
 				7F19DC8222737B8800E60BF1 /* DonateHistoryController.swift */,
-				B7DE8C5D22747B4000AACCFA /* YayasanDetailViewController.swift */,
-				B7DE8C5B2274389100AACCFA /* YayasanViewController.swift */,
 				B7CA0C9D22754FA4000935E2 /* EventViewController.swift */,
 			);
 			path = ViewControllers;
@@ -224,24 +230,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B07DF1882273494700244C75 /* EventDetailController.swift in Sources */,
 				7F2FA65A2270CFB400381683 /* DiscoverController.swift in Sources */,
 				7F2FA65E2270E11700381683 /* DonateController.swift in Sources */,
-				B7DE8C5E22747B4000AACCFA /* YayasanDetailViewController.swift in Sources */,
 				B7CA0C9C227549BE000935E2 /* Event.swift in Sources */,
 				B7CA0C9E22754FA4000935E2 /* EventViewController.swift in Sources */,
 				7F47085422723CCB002B51BC /* Donation.swift in Sources */,
+				B0CFE0632276B129007506F8 /* EventDetailCategoryCell.swift in Sources */,
 				B71761042273097C006F9C08 /* YayasanCell.swift in Sources */,
 				B7CA0C9A2275497A000935E2 /* EventCell.swift in Sources */,
 				B09317FB22731B1700F6DCC0 /* ImageSliderCollectionCell.swift in Sources */,
 				7FDA4F8A227331E4000C676A /* DonateDetailController.swift in Sources */,
 				B07DF186227343CE00244C75 /* CategoryCollectionCell.swift in Sources */,
 				7F2FA6452270C0E900381683 /* AppDelegate.swift in Sources */,
+				B0B95FD22275E4CE00C6DE58 /* EventDetailCollectionCell.swift in Sources */,
 				B07DF1842273417900244C75 /* MostUrgentCollectionCell.swift in Sources */,
 				B09317F92273197E00F6DCC0 /* EventController.swift in Sources */,
-				7F19DC872274BEB100E60BF1 /* DiscoveryDetailController.swift in Sources */,
 				B717610622730B19006F9C08 /* Yayasan.swift in Sources */,
 				7FDA4F8822733093000C676A /* OnGoingDonateTableViewCell.swift in Sources */,
+				B0B95FCE2275B13D00C6DE58 /* EventDetailController.swift in Sources */,
+				B0B95FCA22758E5E00C6DE58 /* MostUrgentViewController.swift in Sources */,
+				B0B95FC822758D4D00C6DE58 /* CategoryViewController.swift in Sources */,
 				7F19DC8322737B8800E60BF1 /* DonateHistoryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
