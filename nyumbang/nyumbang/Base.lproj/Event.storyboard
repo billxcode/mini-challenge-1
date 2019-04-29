@@ -13,7 +13,6 @@
         <!--Home View Controller-->
         <scene sceneID="n3F-dg-Ajx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6EZ-fe-78B" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="9Pg-MQ-bcW" userLabel="Home View Controller" customClass="EventController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RZS-Vm-uSg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -190,6 +189,7 @@
                         <segue destination="Y7g-BK-ThK" kind="show" id="Isf-uz-OeR"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6EZ-fe-78B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1197" y="846"/>
         </scene>
@@ -410,7 +410,7 @@
         <scene sceneID="5dQ-bv-BQr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EK5-v7-iyA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="KpZ-Sw-VTh"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="todayIcon" id="KpZ-Sw-VTh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ra4-0u-AlU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -528,7 +528,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J75-PA-U3X">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="171"/>
-                                                <mutableString key="text">Banjir bandang yang diiringi tanah longsor menerjang Sulawesi Selatan (Sulsel) sejak Selasa 22 Januari lalu. Banjir besar yang mengepung 10 kabupaten di Sulawesi Selatan itu dipicu curah hujan tinggi sehingga meluapkan air di Bendungan Bili-bili. Sejak Selasa 22 Januari sore, Tim ACT yang sudah berada di lapangan melaporkan area provinsi Sulawesi Selatan terkhusus wilayah Makassar dan Gowa berada dalam status waspada. Akibat bencana tersebut, puluhan orang dinyatakan meninggal dunia dan sebagian orang masih dinyatakan hilang akibat tertimbun longsor. </mutableString>
+                                                <string key="text">Banjir bandang yang diiringi tanah longsor menerjang Sulawesi Selatan (Sulsel) sejak Selasa 22 Januari lalu. Banjir besar yang mengepung 10 kabupaten di Sulawesi Selatan itu dipicu curah hujan tinggi sehingga meluapkan air di Bendungan Bili-bili. Sejak Selasa 22 Januari sore, Tim ACT yang sudah berada di lapangan melaporkan area provinsi Sulawesi Selatan terkhusus wilayah Makassar dan Gowa berada dalam status waspada. Akibat bencana tersebut, puluhan orang dinyatakan meninggal dunia dan sebagian orang masih dinyatakan hilang akibat tertimbun longsor. </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -692,5 +692,6 @@ condition for children.</string>
     <resources>
         <image name="Clothes" width="54" height="57"/>
         <image name="buku" width="414" height="298"/>
+        <image name="todayIcon" width="29" height="30"/>
     </resources>
 </document>

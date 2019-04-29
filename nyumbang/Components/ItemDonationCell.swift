@@ -10,14 +10,6 @@ import UIKit
 
 class ItemDonationCell: UICollectionViewCell {
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        if!__CGSizeEqualToSize(bounds.size,self.intrinsicContentSize)do {
-            self.invalidateIntrinsicContentSize()
-        }
-    }
-    override var intrinsicContentSize: CGSize {
-        return contentSize
-    }
+    //
     
 }
