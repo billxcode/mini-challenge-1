@@ -12,8 +12,14 @@ class EventController: UIViewController {
 
     @IBOutlet weak var imageSlider: UICollectionView!
     
+    @IBOutlet weak var categorySlider: UICollectionView!
+    @IBOutlet weak var mostUrgentSlider: UICollectionView!
     @IBOutlet weak var pageControlImage: UIPageControl!
     var imageArr = ["palu","buku","pangan"]
+    var mostLabel = ["asdadasdsadasd","wkwkwkwk","okoookokokok"]
+    
+    var categoryLabel = ["Clothes","Stationary"]
+    
     
     
     var timer = Timer()
@@ -23,8 +29,22 @@ class EventController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        imageSlider.dataSource = self
+        initCollectionView()
         imageSlideFunction()
+        
+//        imageSlideFunction()
+    }
+    
+    func initCollectionView(){
+        imageSlider.dataSource = self
+        imageSlider.delegate = self
+        
+        mostUrgentSlider.dataSource = self
+        mostUrgentSlider.delegate = self
+        
+        categorySlider.dataSource = self
+        categorySlider.delegate = self
+        
     }
     
     func imageSlideFunction(){
@@ -57,36 +77,143 @@ class EventController: UIViewController {
 
 }
 
-extension EventController: UICollectionViewDataSource,UICollectionViewDelegate {
+extension EventController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageArr.count
+        var counterPath = 0
+        if (collectionView == self.imageSlider){
+           counterPath = imageArr.count
+        }else if collectionView == self.mostUrgentSlider {
+            counterPath = mostLabel.count
+        }else if collectionView == self.categorySlider {
+            counterPath = categoryLabel.count
+        }
+        return counterPath
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = imageSlider.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ImageSliderCollectionCell
-        cell.img.image = UIImage(named: imageArr[indexPath.row])
-        return cell
+        
+        if collectionView == self.imageSlider {
+            let cell = imageSlider.dequeueReusableCell(withReuseIdentifier: "cellTop", for: indexPath) as! ImageSliderCollectionCell
+            cell.img.image = UIImage(named: imageArr[indexPath.row])
+            return cell
+        }else if collectionView == self.mostUrgentSlider {
+            let mostCell = mostUrgentSlider.dequeueReusableCell(withReuseIdentifier: "mostCell", for: indexPath) as! MostUrgentCollectionCell
+            
+            mostCell.mostImage.image = UIImage(named: imageArr[indexPath.row])
+            mostCell.mostTitle.text = mostLabel[indexPath.row]
+            mostCell.mostImage.layer.cornerRadius = 3
+            
+            return mostCell
+        }else {
+            let categoryCell = categorySlider.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CategoryCollectionCell
+            categoryCell.categoryImage.image = UIImage(named: imageArr[indexPath.row])
+            
+           categoryCell.categoryImage.layer.masksToBounds = false
+            categoryCell.categoryImage.layer.cornerRadius = categoryCell.categoryImage.frame.height/2
+            
+            categoryCell.categoryImage.clipsToBounds = true
+            
+                categoryCell.categoryLbl.text = categoryLabel[indexPath.row]
+            
+            return categoryCell
+        }
+        
+       
+        
+        
     }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if (collectionView == self.imageSlider){
+            let vc = storyboard?.instantiateViewController(withIdentifier: "eventDetail") as! EventDetailController
+            
+            vc.sourceData.eventTitleTxt = mostLabel[indexPath.row]
+            vc.sourceData.eventFoundationTxt = "ACT Foundation"
+            vc.sourceData.imageData = imageArr
+            vc.sourceData.addressTxt = "Jl Panjang Utara 4"
+            vc.sourceData.donationDetail = "aaaaaaaadasdsadsdasdadadasdasdadasdadsadasdasdadasdjsdoajdkamfakdmoadoawkdowkdoakdowakdokoakodaodkoawkdoawkdoakdowakdoawkdoakdoakdoawkdoakdoakdoakdoakdoawkdowkdowkdowkdowdkowdkowdkowkdowkdowkdowkdowdkowdkoadahfueiehgiejgoajdoakwdoawjdiowjgijaodjkioawhjfowfaiojdowjfiefjoakaowjfowfgjiaonfaiwnfowjfaiofaofjwaofmnwaiofnwofnwwofaiofjaifoafjoaf"
+            vc.sourceData.locationTxt = "Jakarta"
+            vc.sourceData.locationImageName = "Location"
+            
+            //vc.name = mostLabel[indexPath.row]
+            
+        
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else if collectionView == self.mostUrgentSlider {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "eventDetail") as! EventDetailController
+            
+            vc.sourceData.eventTitleTxt = mostLabel[indexPath.row]
+            vc.sourceData.eventFoundationTxt = "ACT Foundation"
+            vc.sourceData.imageData = imageArr
+            vc.sourceData.addressTxt = "Jl Panjang Utara 4"
+            vc.sourceData.donationDetail = "aaaaaaaadasdsadsdasdadadasdasdadasdadsadasdasdadasdjsdoajdkamfakdmoadoawkdowkdoakdowakdokoakodaodkoawkdoawkdoakdowakdoawkdoakdoakdoawkdoakdoakdoakdoakdoawkdowkdowkdowkdowdkowdkowdkowkdowkdowkdowkdowdkowdkoadahfueiehgiejgoajdoakwdoawjdiowjgijaodjkioawhjfowfaiojdowjfiefjoakaowjfowfgjiaonfaiwnfowjfaiofaofjwaofmnwaiofnwofnwwofaiofjaifoafjoaf"
+            vc.sourceData.locationTxt = "Jakarta"
+            vc.sourceData.locationImageName = "Location"
+//            vc.name = mostLabel[indexPath.row]
+//            vc.imageName = imageArr[indexPath.row]
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else{
+            
+        }
+    }
+
     
     
 }
 
-extension EventController: UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = imageSlider.frame.size
-        return CGSize(width: size.width, height: size.height)
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0.0
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0.0
-    }
-    
-}
+
+//extension EventController: UICollectionViewDelegateFlowLayout{
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        if (collectionView == self.imageSlider){
+//           return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+//        }else if (collectionView == self.mostUrgentCollection){
+//            return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 15)
+//        }else {
+//            return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 15)
+//        }
+//
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//
+//        if (collectionView == self.imageSlider){
+//            let size = imageSlider.frame.size
+//            return CGSize(width: size.width, height: size.height)
+//        }else if (collectionView == self.mostUrgentCollection){
+//            let size = mostUrgentCollection.frame.size
+//            return CGSize(width: size.width, height: size.height)
+//        }else{
+//            let size = categoryCollection.frame.size
+//            return CGSize(width: size.width, height: size.height)
+//        }
+//
+//
+//    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        if (collectionView == self.imageSlider){
+//            return 0.0
+//        }else if (collectionView == self.mostUrgentCollection){
+//            return 0.0
+//        }else {
+//
+//            return 0.0
+//        }
+//    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        if (collectionView == self.imageSlider){
+//            return 0.0
+//        }else if (collectionView == self.mostUrgentCollection){
+//            return 0.0
+//        }else {
+//            return 0.0
+//        }
+//    }
+//
+//}
 
 

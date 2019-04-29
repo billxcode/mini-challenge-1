@@ -15,16 +15,22 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var descriptionEvent: UILabel!
     @IBOutlet weak var timeRemainingEvent: UILabel!
     @IBOutlet weak var thumbnailEvent: UIImageView!
+    @IBOutlet weak var donateButton: UIButton!
     
     
     var eventFoundation: Event!
     
     func setEvent(event: Event){
         self.eventFoundation = event
+        donateButton.layer.cornerRadius = 10
         titleEvent.text = event.title
         placeEvent.text = event.place
         descriptionEvent.text = event.description
         thumbnailEvent.image = event.thumbnail
-        timeRemainingEvent.text = String(event.timeRemaining)
+        timeRemainingEvent.text = "Sisa hari \(String(event.timeRemaining))"
+    }
+    
+    func toggleButton(param: BooleanLiteralType){
+        donateButton.isHidden = param
     }
 }
