@@ -158,7 +158,18 @@ extension EventController: UICollectionViewDataSource, UICollectionViewDelegate 
             
             self.navigationController?.pushViewController(vc, animated: true)
         }else{
-            
+        
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToEventList" {
+            if let cell = sender as? UICollectionViewCell {
+                guard let EventVC = segue.destination as? EventViewController else { return }
+                
+//                let indexPath = // mentok disini
+//                EventVC.navigationItem.title = mostLabel[indexPath.row] // buat ganti title nya
+            }
         }
     }
 

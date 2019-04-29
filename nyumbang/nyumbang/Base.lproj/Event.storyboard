@@ -152,6 +152,7 @@
                                         <connections>
                                             <outlet property="categoryImage" destination="bsE-PI-4yR" id="4ai-lQ-IG0"/>
                                             <outlet property="categoryLbl" destination="6up-un-ZCt" id="Ejb-Bl-wtu"/>
+                                            <segue destination="0TB-vc-gkF" kind="show" identifier="segueToEventList" id="b47-VE-E0H"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -694,4 +695,7 @@ condition for children.</string>
         <image name="buku" width="414" height="298"/>
         <image name="todayIcon" width="29" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="b47-VE-E0H"/>
+    </inferredMetricsTieBreakers>
 </document>
