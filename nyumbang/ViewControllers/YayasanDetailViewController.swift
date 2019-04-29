@@ -14,13 +14,22 @@ class YayasanDetailViewController: UIViewController {
     @IBOutlet weak var photoFoundation: UIImageView!
     @IBOutlet weak var bannerFoundation: UIImageView!
     @IBOutlet weak var listEventTable: UITableView!
+//    @IBOutlet weak var listEventHistoryTable: UITableView!
+    @IBOutlet weak var listEventView: UIView!
+    @IBOutlet weak var listEventHistoryView: UIView!
     
     var yayasan: Yayasan!
     var listEvent: [Event] = []
+    var eventCell: EventCell!
+    
+    var tabToggle = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
         listEvent = createEventArray()
+        
+        listEventView.isHidden = false
+        listEventHistoryView.isHidden = true
         
         titleFoundation.text = yayasan?.title
         photoFoundation.image = yayasan?.photo
@@ -28,6 +37,17 @@ class YayasanDetailViewController: UIViewController {
         placeFoundation.text = yayasan?.place
         
         // Do any additional setup after loading the view.
+    }
+    @IBAction func tabEventFoundation(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex==0 {
+            listEventView.isHidden = false
+            listEventHistoryView.isHidden = true
+        }else{
+            listEventView.isHidden = true
+            listEventHistoryView.isHidden = false
+        }
+        listEventTable.reloadData()
+//        listEventHistoryTable.reloadData()
     }
     
     func createEventArray() -> [Event]{
@@ -72,7 +92,8 @@ extension YayasanDetailViewController: UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let yayasanKita = listEvent[indexPath.row]
-        let cell = listEventTable.dequeueReusableCell(withIdentifier: "EventFoundationCell") as! EventCell
+        var cell = listEventTable.dequeueReusableCell(withIdentifier: "EventFoundationCell") as! EventCell
+        
         cell.setEvent(event: yayasanKita)
         
         return cell

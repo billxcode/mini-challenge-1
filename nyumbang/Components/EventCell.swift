@@ -29,4 +29,8 @@ class EventCell: UITableViewCell {
         thumbnailEvent.image = event.thumbnail
         timeRemainingEvent.text = "Sisa hari \(String(event.timeRemaining))"
     }
+    
+    func toggleButton(param: BooleanLiteralType){
+        donateButton.isHidden = param
+    }
 }
