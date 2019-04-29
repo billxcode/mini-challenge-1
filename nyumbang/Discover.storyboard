@@ -14,7 +14,7 @@
         <scene sceneID="mVV-Nf-xJU">
             <objects>
                 <navigationController modalTransitionStyle="flipHorizontal" id="Hlc-NQ-aQM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Discover" id="SjS-9H-sLh"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="searchIcon" id="SjS-9H-sLh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ESB-KB-DS0">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -959,6 +959,7 @@ Tsunami Palu…</string>
         <image name="int-overview" width="960" height="540"/>
         <image name="palu" width="414" height="298"/>
         <image name="pangan" width="414" height="298"/>
+        <image name="searchIcon" width="30" height="30"/>
         <image name="vlog-4" width="960" height="540"/>
     </resources>
 </document>
