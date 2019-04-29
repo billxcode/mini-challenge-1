@@ -63,13 +63,17 @@ extension DonateController: UITableViewDelegate, UITableViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        let backItem = UIBarButtonItem()
+        backItem.title = "My Donation"
+        navigationItem.backBarButtonItem = backItem
+        
         if segue.identifier == nil {
             
             let indexPath = tableView.indexPathForSelectedRow
             let currentDonation = tableView.cellForRow(at: indexPath!) as! OnGoingDonateTableViewCell
             
             guard let donateDetailVC = segue.destination as? DonateDetailController else { return }
-            
+
             donateDetailVC.donation = currentDonation.donation
             
         }

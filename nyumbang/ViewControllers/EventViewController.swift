@@ -9,6 +9,7 @@
 import UIKit
 
 class EventViewController: UIViewController {
+    
     @IBOutlet weak var listEvent: UITableView!
     
     var listTableEvent: [Event] = []
@@ -17,7 +18,6 @@ class EventViewController: UIViewController {
         super.viewDidLoad()
         
         listTableEvent = createEventArray()
-        
         // Do any additional setup after loading the view.
     }
     

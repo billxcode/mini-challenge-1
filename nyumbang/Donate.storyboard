@@ -14,13 +14,12 @@
         <scene sceneID="2eu-nj-Jy5">
             <objects>
                 <navigationController id="9b8-Xb-qVw" userLabel="Donate" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Donate" id="3U2-4J-i64"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBarItem key="tabBarItem" title="Donate" image="compose" id="3U2-4J-i64"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Anx-WT-ylm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lau-VL-Jy5">
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="lau-VL-Jy5">
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
@@ -36,11 +35,11 @@
             <objects>
                 <viewController title="On Going Donations" id="ZV1-2a-9lF" userLabel="Donate View Controller" customClass="DonateController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QKw-dr-RFu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZWL-do-6Er">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="onGoingDonationCell" rowHeight="150" id="wdu-mQ-0CE" customClass="OnGoingDonateTableViewCell" customModule="nyumbang" customModuleProvider="target">
@@ -159,17 +158,90 @@
         <!--Detail Event-->
         <scene sceneID="UaP-wb-bXp">
             <objects>
-                <viewController title="Detail Event" id="Y4c-2w-Mre" sceneMemberID="viewController">
+                <viewController title="Detail Event" id="Y4c-2w-Mre" customClass="EventReportController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1cR-fk-ubR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k66-9e-2Pr">
+                                <rect key="frame" x="0.0" y="88" width="414" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="BnG-DD-01p"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Y4c-2w-Mre" id="5HW-yY-lgF"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="02z-y5-Q2e">
+                                <rect key="frame" x="187.5" y="320" width="39" height="37"/>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galang Dana Untuk Tsunami" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35T-ZI-fKI">
+                                <rect key="frame" x="30" y="373" width="354" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By ACT Fondation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ii5-gM-nCC">
+                                <rect key="frame" x="30" y="411.5" width="354" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 April 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2va-fE-2Wa">
+                                <rect key="frame" x="30" y="436.5" width="354" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zzT-lE-87Y">
+                                <rect key="frame" x="30" y="492.5" width="354" height="383.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="354" id="rcN-il-lYy"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2va-fE-2Wa" firstAttribute="top" secondItem="ii5-gM-nCC" secondAttribute="bottom" constant="5" id="1D5-wW-a92"/>
+                            <constraint firstItem="UkY-UT-VUs" firstAttribute="trailing" secondItem="2va-fE-2Wa" secondAttribute="trailing" constant="30" id="5kC-pP-a1a"/>
+                            <constraint firstItem="zzT-lE-87Y" firstAttribute="top" secondItem="2va-fE-2Wa" secondAttribute="bottom" constant="40" id="GjT-zC-M56"/>
+                            <constraint firstItem="k66-9e-2Pr" firstAttribute="trailing" secondItem="UkY-UT-VUs" secondAttribute="trailing" id="LGK-mB-bXW"/>
+                            <constraint firstItem="UkY-UT-VUs" firstAttribute="trailing" secondItem="ii5-gM-nCC" secondAttribute="trailing" constant="30" id="cKg-rM-cqT"/>
+                            <constraint firstItem="2va-fE-2Wa" firstAttribute="leading" secondItem="UkY-UT-VUs" secondAttribute="leading" constant="30" id="dAm-3Y-pGR"/>
+                            <constraint firstItem="35T-ZI-fKI" firstAttribute="top" secondItem="k66-9e-2Pr" secondAttribute="bottom" constant="15" id="itn-gd-GBG"/>
+                            <constraint firstAttribute="bottom" secondItem="zzT-lE-87Y" secondAttribute="bottom" constant="20" id="mRw-XW-Wwo"/>
+                            <constraint firstItem="UkY-UT-VUs" firstAttribute="trailing" secondItem="35T-ZI-fKI" secondAttribute="trailing" constant="30" id="mlR-3C-ZBg"/>
+                            <constraint firstItem="k66-9e-2Pr" firstAttribute="top" secondItem="UkY-UT-VUs" secondAttribute="top" id="mt7-8S-eo5"/>
+                            <constraint firstItem="02z-y5-Q2e" firstAttribute="centerX" secondItem="1cR-fk-ubR" secondAttribute="centerX" id="rPx-GL-CZa"/>
+                            <constraint firstItem="UkY-UT-VUs" firstAttribute="trailing" secondItem="zzT-lE-87Y" secondAttribute="trailing" constant="30" id="rat-gf-O67"/>
+                            <constraint firstItem="02z-y5-Q2e" firstAttribute="top" secondItem="UkY-UT-VUs" secondAttribute="top" constant="232" id="vt1-Jo-fgo"/>
+                            <constraint firstItem="zzT-lE-87Y" firstAttribute="leading" secondItem="UkY-UT-VUs" secondAttribute="leading" constant="30" id="wnF-Lb-DP9"/>
+                            <constraint firstItem="k66-9e-2Pr" firstAttribute="leading" secondItem="UkY-UT-VUs" secondAttribute="leading" id="x6Z-Pb-Jgf"/>
+                            <constraint firstItem="ii5-gM-nCC" firstAttribute="leading" secondItem="UkY-UT-VUs" secondAttribute="leading" constant="30" id="yVv-qm-Hye"/>
+                            <constraint firstItem="35T-ZI-fKI" firstAttribute="leading" secondItem="UkY-UT-VUs" secondAttribute="leading" constant="30" id="yyl-yh-Su0"/>
+                            <constraint firstItem="ii5-gM-nCC" firstAttribute="top" secondItem="35T-ZI-fKI" secondAttribute="bottom" constant="5" id="zBi-uW-0C7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UkY-UT-VUs"/>
                     </view>
+                    <connections>
+                        <outlet property="eventSlider" destination="k66-9e-2Pr" id="oPY-bo-WJE"/>
+                        <outlet property="eventSliderPageControll" destination="02z-y5-Q2e" id="gNo-of-u9U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1g-0d-eYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="475"/>
+            <point key="canvasLocation" x="672.46376811594212" y="474.77678571428567"/>
         </scene>
         <!--Detail Donate View Controller-->
         <scene sceneID="G2q-Pe-IQ2">
@@ -346,6 +418,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="compose" width="31" height="30"/>
         <image name="markLocation" width="6" height="15"/>
     </resources>
+    <color key="tintColor" red="0.22352941179999999" green="0.70588235290000001" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
