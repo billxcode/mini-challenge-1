@@ -574,7 +574,7 @@ Tsunami Palu…</string>
         <!--Discover View Controller-->
         <scene sceneID="OR8-b6-7bj">
             <objects>
-                <viewController title="Yayasan" extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" id="3bZ-wK-cil" userLabel="Discover View Controller" customClass="YayasanViewController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="foundationViewController" title="Yayasan" extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3bZ-wK-cil" userLabel="Discover View Controller" customClass="YayasanViewController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFu-7l-UGx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
