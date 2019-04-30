@@ -28,11 +28,20 @@ class EventDetailViewController: UIViewController {
     
     var sourceData = data()
     
+    var eventFoundation: Event!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         descriptionView.isHidden = false
         conditionTable.isHidden = true
-        initSource()
+        photoEvent.image = eventFoundation?.thumbnail
+        titleEvent.text = eventFoundation?.title
+        nameFoundation.text = "ACT FOR HUMANITY"
+        addressEvent.text = eventFoundation?.place
+        descriptionEvent.text = eventFoundation?.description
+        if eventFoundation?.title == nil {
+            initSource()
+        }
         // Do any additional setup after loading the view.
     }
     

@@ -68,12 +68,13 @@ extension EventViewController: UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let indexPath = listEvent.indexPathForSelectedRow
-//        let currentDiscovery = listEvent.cellForRow(at: <#T##IndexPath#>!) as! EventCell
-//
-//
-//
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath = listEvent.indexPathForSelectedRow
+        let currentDiscovery = listEvent.cellForRow(at: indexPath!) as! EventCell
+
+        
+        guard let discoveryDetail = segue.destination as? EventDetailViewController else { return }
+        discoveryDetail.eventFoundation = currentDiscovery.eventFoundation
+    }
     
 }
