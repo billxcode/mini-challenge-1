@@ -500,6 +500,9 @@ Tsunami Palu…</string>
                                                                     <state key="normal" title="Donate Now">
                                                                         <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </state>
+                                                                    <connections>
+                                                                        <segue destination="wsN-dI-aeT" kind="show" id="KwS-Rr-S4u"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -562,6 +565,14 @@ Tsunami Palu…</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tr3-IW-HD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="684"/>
+        </scene>
+        <!--Transaction-->
+        <scene sceneID="VdY-Oh-MaU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Transaction" id="wsN-dI-aeT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKp-Qf-tiq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="594" y="530"/>
         </scene>
         <!--EventDetailViewController-->
         <scene sceneID="cgg-ep-anh">
@@ -847,6 +858,9 @@ Tsunami Palu…</string>
                                                                                     <state key="normal" title="Donate Now">
                                                                                         <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     </state>
+                                                                                    <connections>
+                                                                                        <segue destination="nuz-RY-SRe" kind="show" id="6Lr-Gg-UpB"/>
+                                                                                    </connections>
                                                                                 </button>
                                                                             </subviews>
                                                                         </stackView>
@@ -945,6 +959,14 @@ Tsunami Palu…</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mC-iu-2Wc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2332" y="-38"/>
+        </scene>
+        <!--Transaction-->
+        <scene sceneID="3CK-Z5-cpP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Transaction" id="nuz-RY-SRe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HRD-10-FzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2271" y="85"/>
         </scene>
     </scenes>
     <resources>
