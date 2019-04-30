@@ -52,17 +52,21 @@ class DonationProcess: UIViewController {
         donateItemList.delegate = self
         
         
-        dataSource.titleItem = ["a","b","c"]
-        dataSource.descriptItem = ["a","b","c"]
+        dataSource.titleItem = ["Clothes","Toys","Pants"]
+        dataSource.descriptItem = [
+            "We need 100 pcs clothes with good condition for children.",
+            "Need toys for cheer up disaster victim children.",
+            "Need some pants for victim"
+        ]
         
         
         dataSource.amountTotal = ["0","0","0"]
-        dataSource.iconName = ["palu","palu","palu"]
+        dataSource.iconName = ["category-clothes","category-toys","category-pants"]
         
-        dataSource.methodName = ["a","b","c"]
-        dataSource.methodImageName = ["palu","palu","palu"]
+        dataSource.methodName = ["Pick Up","Courier","Deliver"]
+        dataSource.methodImageName = ["Method-Pickup","Method-Kurir","Method-Pickup"]
         
-        locationImage.image = UIImage(named: "Location")
+        locationImage.image = UIImage(named: "markLocation")
         locationAddress.text = "Jl.Panjang Utara no 4"
         
         navigationButton()
@@ -153,11 +157,13 @@ extension DonationProcess: UICollectionViewDelegate,UICollectionViewDataSource{
         
         
         let cellToSelect: UICollectionViewCell = methodDeliveryCollectionView.cellForItem(at: indexPath)!
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "methodCell", for: indexPath) as! methodDeliveryCollectionCell
         
+            cellToSelect.contentView.backgroundColor = #colorLiteral(red: 0.2235294118, green: 0.7058823529, blue: 0.5176470588, alpha: 1)
+            cellToSelect.contentView.layer.masksToBounds = true
+            cellToSelect.contentView.layer.cornerRadius = 5
         
-        
-            cellToSelect.contentView.backgroundColor = UIColor.green
-            
+            cell.titleDelivery.textColor = .white
             estimateLocation.text = "Estimate Location 10 Km"
             priceLbl.text = "Rp. 10.000"
         
