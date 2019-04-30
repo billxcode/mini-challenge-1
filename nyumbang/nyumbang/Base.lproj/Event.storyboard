@@ -127,7 +127,6 @@
                                         <connections>
                                             <outlet property="mostImage" destination="3dt-bo-PXa" id="rah-6T-qHP"/>
                                             <outlet property="mostTitle" destination="04Z-hB-ofc" id="nhD-qm-Yjq"/>
-                                            <segue destination="t8D-e2-AZq" kind="show" id="p1z-3b-elY"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -214,9 +213,6 @@
                         <outlet property="imageSlider" destination="2QO-jE-a0A" id="7AC-PQ-Vgd"/>
                         <outlet property="mostUrgentSlider" destination="I2g-lX-4VF" id="DND-Dv-uXr"/>
                         <outlet property="pageControlImage" destination="fhN-9X-TRP" id="iWt-89-xKj"/>
-                        <segue destination="kxD-4t-WVy" kind="show" id="5Of-ES-MjB"/>
-                        <segue destination="2St-96-SJJ" kind="show" id="IuI-Iw-vTp"/>
-                        <segue destination="Y7g-BK-ThK" kind="show" id="Isf-uz-OeR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6EZ-fe-78B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -503,13 +499,13 @@
         <!--Detail Event-->
         <scene sceneID="zCe-pE-Vrc">
             <objects>
-                <viewController storyboardIdentifier="EventDetailViewController" title="Detail Event" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t8D-e2-AZq" customClass="EventDetailViewController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventDetailViewController" title="Detail Event" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t8D-e2-AZq" customClass="EventDetailViewController" customModule="nyumbang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M0U-Bk-mYu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHs-sa-Ieu">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buku" translatesAutoresizingMaskIntoConstraints="NO" id="h7C-Vz-GTO">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="298"/>
