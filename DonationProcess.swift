@@ -65,7 +65,7 @@ class DonationProcess: UIViewController {
         locationImage.image = UIImage(named: "Location")
         locationAddress.text = "Jl.Panjang Utara no 4"
         
-        
+        navigationButton()
         
     }
     
@@ -82,7 +82,7 @@ class DonationProcess: UIViewController {
         for i in dataSource.amountTotal{
             total += Int(i)!
         }
-        if total < 0 {
+        if total <= 0 {
             
             let alert = UIAlertController(title: "No Donation Item", message: "You haven't set your item", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
