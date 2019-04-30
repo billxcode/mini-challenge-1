@@ -682,6 +682,9 @@ condition for children.</string>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Donate"/>
+                                        <connections>
+                                            <segue destination="lHh-mV-ey9" kind="show" id="JIf-62-lUT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -719,6 +722,14 @@ condition for children.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXg-AA-WL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-128" y="1582"/>
+        </scene>
+        <!--Transaction-->
+        <scene sceneID="JfB-c5-LT3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Transaction" id="lHh-mV-ey9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbt-AZ-IJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="1655"/>
         </scene>
     </scenes>
     <resources>
