@@ -37,7 +37,15 @@ class DonationProcess: UIViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismisKeyboard))
+        
+        view.addGestureRecognizer(tap)
+        
         initial()
+    }
+    
+    @objc func dismisKeyboard() {
+        view.endEditing(true)
     }
     
     func initial(){
@@ -109,6 +117,8 @@ class DonationProcess: UIViewController {
         //segue
         self.dismiss(animated: true)
     }
+    
+    
     
     
     
