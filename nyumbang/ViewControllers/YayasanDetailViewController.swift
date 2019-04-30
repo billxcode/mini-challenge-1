@@ -98,8 +98,14 @@ extension YayasanDetailViewController: UITableViewDataSource, UITableViewDelegat
             cell.timeRemainingEvent.text = "Event ended"
         }
         
+//        cell.donateButton.addTarget(self, action: #selector(segueToTransaction(_:)), for: .touchUpInside)
+        
         return cell
     }
+    
+//    @objc func segueToTransaction(_ sender: UIButton) {
+//        self.performSegue(withIdentifier: "TransactionViewController", sender: self)
+//    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let indexPath = listEventTable.indexPathForSelectedRow
