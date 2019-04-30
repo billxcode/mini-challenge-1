@@ -33,7 +33,9 @@ class ChooseItemCell: UITableViewCell,UITextFieldDelegate {
     override func awakeFromNib() {
         inputAmountChooseItem.delegate = self
         inputAmountChooseItem.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        
     }
+    
     
     @objc func textFieldDidChange(_ textField: UITextField){
         

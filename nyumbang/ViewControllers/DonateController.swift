@@ -36,8 +36,8 @@ class DonateController: UIViewController {
     func createDonations() -> [Donation] {
         
         let donation1 = Donation.init(name: "Galang Dana Untuk Tsunami", reaming: "4 Days Left", status: "Finding Driver", date: "6 April, 2:16 PM")
-        let donation2 = Donation.init(name: "Event Name", reaming: "2 Days Left", status: "Finding Driver", date: "6 April, 2:16 PM")
-        let donation3 = Donation.init(name: "Event Name", reaming: "Overdue", status: "Finding Driver", date: "28 March, 09:29 PM")
+        let donation2 = Donation.init(name: "Galang Dana Untuk Banjir", reaming: "2 Days Left", status: "Finding Driver", date: "6 April, 2:16 PM")
+        let donation3 = Donation.init(name: "Galang Dana Untuk Gempa", reaming: "Overdue", status: "Finding Driver", date: "28 March, 09:29 PM")
         
         return [donation1, donation2, donation3]
     }
