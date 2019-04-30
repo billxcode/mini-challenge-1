@@ -85,7 +85,7 @@ extension YayasanDetailViewController: UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let yayasanKita = listEvent[indexPath.row]
-        var cell = listEventTable.dequeueReusableCell(withIdentifier: "EventFoundationCell") as! EventCell
+        let cell = listEventTable.dequeueReusableCell(withIdentifier: "EventFoundationCell") as! EventCell
         
         cell.setEvent(event: yayasanKita)
         
@@ -101,15 +101,13 @@ extension YayasanDetailViewController: UITableViewDataSource, UITableViewDelegat
         return cell
     }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        let indexPath = listEventTable.indexPathForSelectedRow
-//        let currentDiscovery = listEventTable.cellForRow(at: indexPath!) as! EventCell
-//
-//        guard let discoveryDetail = segue.destination as? YayasanDetailViewController else { return }
-//        discoveryDetail.yayasan = currentDiscovery.yayasan
-//
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath = listEventTable.indexPathForSelectedRow
+        let currentDiscovery = listEventTable.cellForRow(at: indexPath!) as! EventCell
+    
+        guard let discoveryDetail = segue.destination as? EventDetailViewController else { return }
+        discoveryDetail.eventFoundation = currentDiscovery.eventFoundation
+    }
     
 }
 

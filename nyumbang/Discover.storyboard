@@ -879,6 +879,7 @@ Tsunami Palu…</string>
                                                             <outlet property="thumbnailEvent" destination="DrM-fQ-zjK" id="OdF-b9-3v3"/>
                                                             <outlet property="timeRemainingEvent" destination="0PG-Ts-gdx" id="cTl-hk-5Mo"/>
                                                             <outlet property="titleEvent" destination="yUt-A3-0lr" id="4ta-1e-UHA"/>
+                                                            <segue destination="T3d-c9-w4i" kind="show" id="Edm-TA-Th3"/>
                                                         </connections>
                                                     </tableViewCell>
                                                 </prototypes>
@@ -936,6 +937,14 @@ Tsunami Palu…</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b19-pw-Kru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1669.5652173913045" y="-38.169642857142854"/>
+        </scene>
+        <!--EventDetailViewController-->
+        <scene sceneID="SGN-8i-BKq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Event" referencedIdentifier="EventDetailViewController" id="T3d-c9-w4i" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mC-iu-2Wc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2332" y="-38"/>
         </scene>
     </scenes>
     <resources>
