@@ -534,7 +534,7 @@ Tsunami Palu…</string>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="descriptionEvent" destination="aZZ-8t-a3Y" id="kdW-aZ-gcn"/>
-                                            <outlet property="donateButton" destination="o2b-VQ-Mpw" id="hbO-PN-UJa"/>
+                                            <outlet property="donateButton" destination="o2b-VQ-Mpw" id="IPx-rM-cbD"/>
                                             <outlet property="placeEvent" destination="W2M-8f-6bi" id="hRm-j8-G3Q"/>
                                             <outlet property="thumbnailEvent" destination="hRP-X6-9GC" id="Cte-KL-aOh"/>
                                             <outlet property="timeRemainingEvent" destination="5N3-nL-yxd" id="v4A-Qf-TD7"/>
@@ -888,7 +888,7 @@ Tsunami Palu…</string>
                                                         </tableViewCellContentView>
                                                         <connections>
                                                             <outlet property="descriptionEvent" destination="qA1-aP-J7s" id="svh-pH-f0u"/>
-                                                            <outlet property="donateButton" destination="89T-9R-3id" id="gJP-X5-brd"/>
+                                                            <outlet property="donateButton" destination="89T-9R-3id" id="uLR-mW-f3m"/>
                                                             <outlet property="placeEvent" destination="GNa-5P-sUK" id="Kgb-Mw-tJk"/>
                                                             <outlet property="thumbnailEvent" destination="DrM-fQ-zjK" id="OdF-b9-3v3"/>
                                                             <outlet property="timeRemainingEvent" destination="0PG-Ts-gdx" id="cTl-hk-5Mo"/>
