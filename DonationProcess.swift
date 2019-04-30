@@ -11,7 +11,7 @@ import UIKit
 class DonationProcess: UIViewController {
 
     @IBOutlet weak var locationAddress: UILabel!
-//    @IBOutlet weak var locationImage: UIImageView!
+    @IBOutlet weak var locationImage: UIImageView!
     @IBOutlet weak var methodDeliveryCollectionView: UICollectionView!
     @IBOutlet weak var donateItemList: UITableView!
     struct data {
