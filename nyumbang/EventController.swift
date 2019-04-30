@@ -18,8 +18,8 @@ class EventController: UIViewController {
     var imageArr = ["palu","buku","pangan"]
     var mostLabel = ["Penggalangan dana amal indonesia","Event Charity Senayan","Berbagi untuk indonesia"]
     
-    var imageCategory = ["Clothes", "rocking-horse"]
-    var categoryLabel = ["Clothes","Stationary"]
+    var imageCategory = ["category-clothes", "category-toys", "category-books", "category-pants", "category-clothes"]
+    var categoryLabel = ["Clothes","Stationary", "Books", "Pants", "Clothes"]
     
     
     

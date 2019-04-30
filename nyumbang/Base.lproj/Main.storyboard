@@ -129,7 +129,7 @@
                                     <constraint firstAttribute="height" constant="50" id="fHr-9P-w9E"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Edit Profile">
+                                <state key="normal" title="Log Out">
                                     <color key="titleColor" red="0.83529411764705885" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
