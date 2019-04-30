@@ -154,12 +154,22 @@ extension DonationProcess: UICollectionViewDelegate,UICollectionViewDataSource{
         
         let cellToSelect: UICollectionViewCell = methodDeliveryCollectionView.cellForItem(at: indexPath)!
         
-        cellToSelect.contentView.backgroundColor = UIColor.white
         
-        cellToSelect.contentView.backgroundColor = UIColor.green
         
-        estimateLocation.text = "Estimate Location 10 Km"
-        priceLbl.text = "Rp. 10.000"
+            cellToSelect.contentView.backgroundColor = UIColor.green
+            
+            estimateLocation.text = "Estimate Location 10 Km"
+            priceLbl.text = "Rp. 10.000"
+        
+        
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let cellToSelect: UICollectionViewCell = methodDeliveryCollectionView.cellForItem(at: indexPath)!
+        
+        
+        cellToSelect.contentView.backgroundColor = UIColor.clear
     }
 
 
