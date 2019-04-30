@@ -16,8 +16,9 @@ class EventController: UIViewController {
     @IBOutlet weak var mostUrgentSlider: UICollectionView!
     @IBOutlet weak var pageControlImage: UIPageControl!
     var imageArr = ["palu","buku","pangan"]
-    var mostLabel = ["asdadasdsadasd","wkwkwkwk","okoookokokok"]
+    var mostLabel = ["Penggalangan dana amal indonesia","Event Charity Senayan","Berbagi untuk indonesia"]
     
+    var imageCategory = ["Clothes", "rocking-horse"]
     var categoryLabel = ["Clothes","Stationary"]
     
     
@@ -106,7 +107,7 @@ extension EventController: UICollectionViewDataSource, UICollectionViewDelegate 
             return mostCell
         }else {
             let categoryCell = categorySlider.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CategoryCollectionCell
-            categoryCell.categoryImage.image = UIImage(named: imageArr[indexPath.row])
+            categoryCell.categoryImage.image = UIImage(named: imageCategory[indexPath.row])
             
            categoryCell.categoryImage.layer.masksToBounds = false
             categoryCell.categoryImage.layer.cornerRadius = categoryCell.categoryImage.frame.height/2
@@ -129,32 +130,21 @@ extension EventController: UICollectionViewDataSource, UICollectionViewDelegate 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if (collectionView == self.imageSlider){
-            let vc = storyboard?.instantiateViewController(withIdentifier: "eventDetail") as! EventDetailController
-            
-            vc.sourceData.eventTitleTxt = mostLabel[indexPath.row]
-            vc.sourceData.eventFoundationTxt = "ACT Foundation"
-            vc.sourceData.imageData = imageArr
-            vc.sourceData.addressTxt = "Jl Panjang Utara 4"
-            vc.sourceData.donationDetail = "aaaaaaaadasdsadsdasdadadasdasdadasdadsadasdasdadasdjsdoajdkamfakdmoadoawkdowkdoakdowakdokoakodaodkoawkdoawkdoakdowakdoawkdoakdoakdoawkdoakdoakdoakdoakdoawkdowkdowkdowkdowdkowdkowdkowkdowkdowkdowkdowdkowdkoadahfueiehgiejgoajdoakwdoawjdiowjgijaodjkioawhjfowfaiojdowjfiefjoakaowjfowfgjiaonfaiwnfowjfaiofaofjwaofmnwaiofnwofnwwofaiofjaifoafjoaf"
-            vc.sourceData.locationTxt = "Jakarta"
-            vc.sourceData.locationImageName = "Location"
-            
-            //vc.name = mostLabel[indexPath.row]
-            
+            let vc = storyboard?.instantiateViewController(withIdentifier: "EventDetailViewController") as! EventDetailViewController
+            vc.sourceData.titleEvent = mostLabel[indexPath.row]
+            vc.sourceData.nameFoundation = "ACT Foundation"
+            vc.sourceData.photoEvent = UIImage(named: imageArr[indexPath.row])
+            vc.sourceData.addressEvent = "Jl Panjang Utara 4"
+            vc.sourceData.descriptionEvent = "aaaaaaaadasdsadsdasdadadasdasdadasdadsadasdasdadasdjsdoajdkamfakdmoadoawkdowkdoakdowakdokoakodaodkoawkdoawkdoakdowakdoawkdoakdoakdoawkdoakdoakdoakdoakdoawkdowkdowkdowkdowdkowdkowdkowkdowkdowkdowkdowdkowdkoadahfueiehgiejgoajdoakwdoawjdiowjgijaodjkioawhjfowfaiojdowjfiefjoakaowjfowfgjiaonfaiwnfowjfaiofaofjwaofmnwaiofnwofnwwofaiofjaifoafjoaf"
         
             self.navigationController?.pushViewController(vc, animated: true)
         }else if collectionView == self.mostUrgentSlider {
-            let vc = storyboard?.instantiateViewController(withIdentifier: "eventDetail") as! EventDetailController
-            
-            vc.sourceData.eventTitleTxt = mostLabel[indexPath.row]
-            vc.sourceData.eventFoundationTxt = "ACT Foundation"
-            vc.sourceData.imageData = imageArr
-            vc.sourceData.addressTxt = "Jl Panjang Utara 4"
-            vc.sourceData.donationDetail = "aaaaaaaadasdsadsdasdadadasdasdadasdadsadasdasdadasdjsdoajdkamfakdmoadoawkdowkdoakdowakdokoakodaodkoawkdoawkdoakdowakdoawkdoakdoakdoawkdoakdoakdoakdoakdoawkdowkdowkdowkdowdkowdkowdkowkdowkdowkdowkdowdkowdkoadahfueiehgiejgoajdoakwdoawjdiowjgijaodjkioawhjfowfaiojdowjfiefjoakaowjfowfgjiaonfaiwnfowjfaiofaofjwaofmnwaiofnwofnwwofaiofjaifoafjoaf"
-            vc.sourceData.locationTxt = "Jakarta"
-            vc.sourceData.locationImageName = "Location"
-//            vc.name = mostLabel[indexPath.row]
-//            vc.imageName = imageArr[indexPath.row]
+            let vc = storyboard?.instantiateViewController(withIdentifier: "EventDetailViewController") as! EventDetailViewController
+            vc.sourceData.titleEvent = mostLabel[indexPath.row]
+            vc.sourceData.nameFoundation = "ACT Foundation"
+            vc.sourceData.photoEvent = UIImage(named: imageArr[indexPath.row])
+            vc.sourceData.addressEvent = "Jl Panjang Utara 4"
+            vc.sourceData.descriptionEvent = "aaaaaaaadasdsadsdasdadadasdasdadasdadsadasdasdadasdjsdoajdkamfakdmoadoawkdowkdoakdowakdokoakodaodkoawkdoawkdoakdowakdoawkdoakdoakdoawkdoakdoakdoakdoakdoawkdowkdowkdowkdowdkowdkowdkowkdowkdowkdowkdowdkowdkoadahfueiehgiejgoajdoakwdoawjdiowjgijaodjkioawhjfowfaiojdowjfiefjoakaowjfowfgjiaonfaiwnfowjfaiofaofjwaofmnwaiofnwofnwwofaiofjaifoafjoaf"
             
             self.navigationController?.pushViewController(vc, animated: true)
         }else{
