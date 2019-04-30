@@ -127,6 +127,7 @@
                                         <connections>
                                             <outlet property="mostImage" destination="3dt-bo-PXa" id="rah-6T-qHP"/>
                                             <outlet property="mostTitle" destination="04Z-hB-ofc" id="nhD-qm-Yjq"/>
+                                            <segue destination="t8D-e2-AZq" kind="show" id="p1z-3b-elY"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -508,7 +509,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHs-sa-Ieu">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buku" translatesAutoresizingMaskIntoConstraints="NO" id="h7C-Vz-GTO">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="298"/>
@@ -709,13 +710,18 @@ condition for children.</string>
                         <viewLayoutGuide key="safeArea" id="a0J-Cx-N6l"/>
                     </view>
                     <connections>
+                        <outlet property="addressEvent" destination="OyQ-H9-l9B" id="VMT-PB-TOV"/>
                         <outlet property="conditionTable" destination="wdY-5v-LFm" id="J1T-Gu-ZiG"/>
+                        <outlet property="descriptionEvent" destination="J75-PA-U3X" id="rFe-aU-kp7"/>
                         <outlet property="descriptionView" destination="hor-s6-ach" id="kTU-Ah-jf8"/>
+                        <outlet property="nameFoundation" destination="gfQ-ct-Wcn" id="Rma-uh-6j1"/>
+                        <outlet property="photoEvent" destination="h7C-Vz-GTO" id="qN8-vM-Fzx"/>
+                        <outlet property="titleEvent" destination="xca-Hm-Ug1" id="QNX-3I-Aeu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XXg-AA-WL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4112" y="1582"/>
+            <point key="canvasLocation" x="-128" y="1582"/>
         </scene>
     </scenes>
     <resources>

@@ -130,18 +130,12 @@ extension EventController: UICollectionViewDataSource, UICollectionViewDelegate 
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if (collectionView == self.imageSlider){
-            let vc = storyboard?.instantiateViewController(withIdentifier: "eventDetail") as! EventDetailController
-            
-            vc.sourceData.eventTitleTxt = mostLabel[indexPath.row]
-            vc.sourceData.eventFoundationTxt = "ACT Foundation"
-            vc.sourceData.imageData = imageArr
-            vc.sourceData.addressTxt = "Jl Panjang Utara 4"
-            vc.sourceData.donationDetail = "aaaaaaaadasdsadsdasdadadasdasdadasdadsadasdasdadasdjsdoajdkamfakdmoadoawkdowkdoakdowakdokoakodaodkoawkdoawkdoakdowakdoawkdoakdoakdoawkdoakdoakdoakdoakdoawkdowkdowkdowkdowdkowdkowdkowkdowkdowkdowkdowdkowdkoadahfueiehgiejgoajdoakwdoawjdiowjgijaodjkioawhjfowfaiojdowjfiefjoakaowjfowfgjiaonfaiwnfowjfaiofaofjwaofmnwaiofnwofnwwofaiofjaifoafjoaf"
-            vc.sourceData.locationTxt = "Jakarta"
-            vc.sourceData.locationImageName = "Location"
-            
-            //vc.name = mostLabel[indexPath.row]
-            
+            let vc = storyboard?.instantiateViewController(withIdentifier: "EventDetailViewController") as! EventDetailViewController
+            vc.sourceData.titleEvent = mostLabel[indexPath.row]
+            vc.sourceData.nameFoundation = "ACT Foundation"
+            vc.sourceData.photoEvent = UIImage(named: imageArr[indexPath.row])
+            vc.sourceData.addressEvent = "Jl Panjang Utara 4"
+            vc.sourceData.descriptionEvent = "aaaaaaaadasdsadsdasdadadasdasdadasdadsadasdasdadasdjsdoajdkamfakdmoadoawkdowkdoakdowakdokoakodaodkoawkdoawkdoakdowakdoawkdoakdoakdoawkdoakdoakdoakdoakdoawkdowkdowkdowkdowdkowdkowdkowkdowkdowkdowkdowdkowdkoadahfueiehgiejgoajdoakwdoawjdiowjgijaodjkioawhjfowfaiojdowjfiefjoakaowjfowfgjiaonfaiwnfowjfaiofaofjwaofmnwaiofnwofnwwofaiofjaifoafjoaf"
         
             self.navigationController?.pushViewController(vc, animated: true)
         }else if collectionView == self.mostUrgentSlider {

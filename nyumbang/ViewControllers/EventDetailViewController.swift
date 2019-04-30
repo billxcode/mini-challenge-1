@@ -11,11 +11,28 @@ import UIKit
 class EventDetailViewController: UIViewController {
     @IBOutlet weak var descriptionView: UIView!
     @IBOutlet weak var conditionTable: UITableView!
-
+    @IBOutlet weak var photoEvent: UIImageView!
+    @IBOutlet weak var titleEvent: UILabel!
+    @IBOutlet weak var nameFoundation: UILabel!
+    @IBOutlet weak var addressEvent: UILabel!
+    @IBOutlet weak var descriptionEvent: UILabel!
+    
+    struct data {
+        var photoEvent: UIImage!
+        var titleEvent: String!
+        var nameFoundation: String!
+        var addressEvent: String!
+        var descriptionEvent: String!
+        
+    }
+    
+    var sourceData = data()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         descriptionView.isHidden = false
         conditionTable.isHidden = true
+        initSource()
         // Do any additional setup after loading the view.
     }
     
@@ -29,6 +46,14 @@ class EventDetailViewController: UIViewController {
         }
     }
     
+    func initSource(){
+        photoEvent.image = sourceData.photoEvent
+        titleEvent.text = sourceData.titleEvent
+        nameFoundation.text = sourceData.nameFoundation
+        addressEvent.text = sourceData.addressEvent
+        descriptionEvent.text = sourceData.descriptionEvent
+        
+    }
     /*
     // MARK: - Navigation
 
