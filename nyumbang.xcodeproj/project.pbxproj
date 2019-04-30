@@ -48,6 +48,7 @@
 		B7CA0C9E22754FA4000935E2 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CA0C9D22754FA4000935E2 /* EventViewController.swift */; };
 		B7CA0C9F22756332000935E2 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		B7CA0CA222756A61000935E2 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		B7CBD6B22277E48900225B7B /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CBD6B12277E48900225B7B /* Transaction.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		B7CA0C992275497A000935E2 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		B7CA0C9B227549BE000935E2 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B7CA0C9D22754FA4000935E2 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		B7CBD6B12277E48900225B7B /* Transaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transaction.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				B09317F82273197E00F6DCC0 /* EventController.swift */,
 				B0E9033922734CF500989A84 /* Event.storyboard */,
 				7F2FA6482270C0E900381683 /* Main.storyboard */,
+				B7CBD6B12277E48900225B7B /* Transaction.storyboard */,
 				7F2FA65B2270DE7500381683 /* Donate.storyboard */,
 				7F2FA6562270C77F00381683 /* Discover.storyboard */,
 				7FFE2BDA2272BE88008F1275 /* Model */,
@@ -255,6 +258,7 @@
 				7F2FA64F2270C0EA00381683 /* LaunchScreen.storyboard in Resources */,
 				7F2FA6572270C77F00381683 /* Discover.storyboard in Resources */,
 				7F2FA65C2270DE7500381683 /* Donate.storyboard in Resources */,
+				B7CBD6B22277E48900225B7B /* Transaction.storyboard in Resources */,
 				7F2FA64C2270C0EA00381683 /* Assets.xcassets in Resources */,
 				7F2FA64A2270C0E900381683 /* Main.storyboard in Resources */,
 				B0E9033B22734CF500989A84 /* Event.storyboard in Resources */,
